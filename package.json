@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy-changes": "ng build --configuration production --base-href='https://Zambelli24.github.io/personal-website/' && ng deploy" 
   },
   "private": true,
   "dependencies": {

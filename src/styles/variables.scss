@@ -1,0 +1,21 @@
+body {
+  --primary-color: darkblue;
+  --secondary-color: lightblue;
+  --tertiary-color: white;
+  --text-color: white;
+  --primary-btn-color: #333;
+  --primary-btn-text: white;
+  --secondary-btn-color: gray;
+  --secondary-btn-text: white;
+}
+
+body.dark {
+  --primary-color: black;
+  --secondary-color: white;
+  --tertiary-color: gray;
+  --text-color: white;
+  --primary-btn-color: lightblue;
+  --primary-btn-text: black;
+  --secondary-btn-color: white;
+  --secondary-btn-text: black;
+}
