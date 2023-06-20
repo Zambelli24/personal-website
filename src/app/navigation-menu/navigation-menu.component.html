@@ -1,4 +1,10 @@
-<button class="nav-btn" [routerLink]="['/about']">About Me</button>
-<button class="nav-btn" [routerLink]="['/portfolio']">Portfolio</button>
-<button class="nav-btn" [routerLink]="['/connect']">Connect</button>
-<button class="nav-btn" [routerLink]="['/settings']" >Settings</button>
+<button class="nav-btn menu-toggle" (click)="toggleMenuOptions()">
+  <mat-icon fontIcon="menu"></mat-icon>
+</button>
+
+<div *ngIf="showNavOptions" class="nav-options">
+  <button class="nav-btn" [routerLink]="['/about']">About Me</button>
+  <button class="nav-btn" [routerLink]="['/portfolio']">Portfolio</button>
+  <button class="nav-btn" [routerLink]="['/connect']">Connect</button>
+  <button class="nav-btn" [routerLink]="['/settings']" >Settings</button>
+</div>

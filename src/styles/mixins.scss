@@ -1,0 +1,9 @@
+@mixin page-content {
+  background-color: var(--app-background-color);
+  box-sizing: border-box;
+  display: block;
+  min-height: calc(100vh - (2 * var(--banner-height)));
+  padding: 15px;
+  position: relative;
+  top: 50px;
+}

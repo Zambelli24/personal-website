@@ -1,3 +1,40 @@
 :host {
   height: 100%;
 }
+
+.nav-options {
+  height: 100%;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.showing {
+  display: block !important;
+}
+
+@media screen and (max-width: 750px) {
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+
+    .nav-btn {
+      background-color: var(--primary-color);
+      border-left: 1px solid #FFF;
+      border-bottom: 1px solid #FFF;
+      padding: 15px;
+
+      &:first-of-type {
+        border-top: 1px solid #FFF;
+      }
+    }
+  }
+
+  .nav-btn.menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+}
