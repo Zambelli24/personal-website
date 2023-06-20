@@ -1,7 +1,35 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'personal-website',
+    pathMatch: 'full',
+    redirectTo: '',
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: AboutComponent,
+  },
+  {
+    path: 'about',
+    loadComponent: () => import('./about/about.component').then(m => m.AboutComponent),
+  },
+  {
+    path: 'connect',
+    loadComponent: () => import('./connect/connect.component').then(m => m.ConnectComponent),
+  },
+  {
+    path: 'portfolio',
+    loadComponent: () => import('./portfolio/portfolio.component').then(m => m.PortfolioComponent),
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('./settings/settings.component').then(m => m.SettingsComponent)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

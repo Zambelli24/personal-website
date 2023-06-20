@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { ColorThemeToggleComponent } from "../color-theme-toggle/color-theme-toggle.component";
+import { NavigationMenuComponent } from "../navigation-menu/navigation-menu.component";
+import { RouterModule } from "@angular/router";
 
 @Component({
   standalone: true,
@@ -7,7 +8,8 @@ import { ColorThemeToggleComponent } from "../color-theme-toggle/color-theme-tog
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   imports: [
-    ColorThemeToggleComponent,
+    NavigationMenuComponent,
+    RouterModule,
   ]
 })
 export class HeaderComponent {}

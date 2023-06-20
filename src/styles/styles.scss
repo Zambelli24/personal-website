@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'buttons';
 @import 'variables';
+
+body {
+  margin: 0;
+}
+
+.page-content {
+  :nth-child(2) {
+    background-color: var(--app-background-color);
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 400px;
+    top: 60px;
+  }
+}
+
+h1 {
+  color: var(--text-color);
+  margin: 0;
+}

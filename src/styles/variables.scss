@@ -1,21 +1,25 @@
 body {
-  --primary-color: darkblue;
-  --secondary-color: lightblue;
-  --tertiary-color: white;
-  --text-color: white;
-  --primary-btn-color: #333;
-  --primary-btn-text: white;
-  --secondary-btn-color: gray;
-  --secondary-btn-text: white;
+  --primary-color: #BAFAFF;
+  --secondary-color: #FBA165;
+  --tertiary-color: #86DAF2;
+  --text-color: #333;
+  --primary-btn-color: #F65C40;
+  --primary-btn-text: #FFF;
+  --secondary-btn-color: #FFF;
+  --secondary-btn-text: #333;
+  --button-hover-bg: #EEE;
+  --app-background-color: #FFF;
 }
 
 body.dark {
-  --primary-color: black;
+  --primary-color: #333;
   --secondary-color: white;
-  --tertiary-color: gray;
+  --tertiary-color: #333;
   --text-color: white;
-  --primary-btn-color: lightblue;
+  --primary-btn-color: #BAFAFF;
   --primary-btn-text: black;
   --secondary-btn-color: white;
-  --secondary-btn-text: black;
+  --secondary-btn-text: #FFF;
+  --button-hover-bg: #999;
+  --app-background-color: #333;
 }
