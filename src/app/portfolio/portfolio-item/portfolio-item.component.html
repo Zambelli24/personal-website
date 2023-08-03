@@ -1,0 +1,27 @@
+<div class="project-header">
+  <a class="project-logo" href="{{ project.link }}" target="_blank" rel="noopener">
+    <img id="{{ project.key }}-logo" src="{{ project.logo }}" alt="{{ project.name }}" />
+  </a>
+
+  <h1>{{ project.name }}</h1>
+</div>
+
+<div class="project-details">
+  <p>{{ project.description }}</p>
+  <h3>My Role</h3>
+  <ul>
+    <li *ngFor="let resp of project.responsibilities">
+      {{ resp }}
+  </ul>
+
+  <h3>Technologies & Languages</h3>
+  <div class="logos-container">
+    <img class="tech-logo"
+         *ngFor="let tech of project.technologies"
+         src="{{ tech.logo }}"
+         alt="{{ tech.name }}"
+         title="{{ tech.name }}">
+  </div>
+</div>
+
+

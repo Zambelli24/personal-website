@@ -1,0 +1,41 @@
+:host {
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.project-header {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+  h1 {
+    padding: 0 20px;
+  }
+}
+
+.project-logo {
+  img {
+    height: 50px;
+
+    &#bound-athlete-logo {
+      background-color: white;
+    }
+  }
+}
+
+.logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+
+.tech-logo {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 5px;
+}

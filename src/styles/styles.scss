@@ -11,3 +11,7 @@ h1 {
   color: var(--text-color);
   margin: 0;
 }
+
+span, p, ul, ol, h2, h3 {
+  color: var(--text-color)
+}
