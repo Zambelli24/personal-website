@@ -18,6 +18,7 @@ export const BoundAthleteProject: IProject = {
     TECHNOLOGIES.NETLIFY,
     TECHNOLOGIES.HEROKU,
     TECHNOLOGIES.NGROK,
+    TECHNOLOGIES.JAVASCRIPT,
   ],
   link: 'https://boundathlete.com/',
   logo: 'assets/project-logos/bound-athlete.png',

@@ -16,6 +16,12 @@ export enum TECHNOLOGY_LOGOS {
   NETLIFY = 'assets/logos/netlify.png',
   HEROKU = 'assets/logos/heroku.png',
   NGROK = 'assets/logos/ngrok.jpeg',
+  JENKINS = 'assets/logos/jenkins.png',
+  JAVA = 'assets/logos/java.png',
+  JAVASCRIPT = 'assets/logos/javascript.png',
+  TYPESCRIPT = 'assets/logos/typescript.png',
+  WEBPACK = 'assets/logos/webpack.png',
+  AUTH0 = 'assets/logos/auth0.png',
 }
 
 export enum TECHNOLOGY_NAMES {
@@ -36,6 +42,12 @@ export enum TECHNOLOGY_NAMES {
   NETLIFY = 'Netlify',
   HEROKU = 'Heroku',
   NGROK = 'Ngrok',
+  JENKINS = 'Jenkins',
+  JAVA = 'Java',
+  JAVASCRIPT = 'JavaScript',
+  TYPESCRIPT = 'TypeScript',
+  WEBPACK = 'Webpack',
+  AUTH0 = 'Auth0',
 }
 
 export const TECHNOLOGIES = {
@@ -107,5 +119,28 @@ export const TECHNOLOGIES = {
     logo: TECHNOLOGY_LOGOS.NGROK,
     name: TECHNOLOGY_NAMES.NGROK,
   },
-
+  JENKINS: {
+    logo: TECHNOLOGY_LOGOS.JENKINS,
+    name: TECHNOLOGY_NAMES.JENKINS,
+  },
+  JAVA: {
+    logo: TECHNOLOGY_LOGOS.JAVA,
+    name: TECHNOLOGY_NAMES.JAVA,
+  },
+  JAVASCRIPT: {
+    logo: TECHNOLOGY_LOGOS.JAVASCRIPT,
+    name: TECHNOLOGY_NAMES.JAVASCRIPT,
+  },
+  TYPESCRIPT: {
+    logo: TECHNOLOGY_LOGOS.TYPESCRIPT,
+    name: TECHNOLOGY_NAMES.TYPESCRIPT,
+  },
+  WEBPACK: {
+    logo: TECHNOLOGY_LOGOS.WEBPACK,
+    name: TECHNOLOGY_NAMES.WEBPACK,
+  },
+  AUTH0: {
+    logo: TECHNOLOGY_LOGOS.AUTH0,
+    name: TECHNOLOGY_NAMES.AUTH0,
+  },
 }

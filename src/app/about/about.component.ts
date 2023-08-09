@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ExperienceService } from '../services/experience.service';
+import { IExperience } from './experience/experience.interface';
 
 @Component({
   standalone: true,
@@ -10,4 +12,10 @@ import { Component } from '@angular/core';
     CommonModule,
   ]
 })
-export class AboutComponent {}
+export class AboutComponent {
+  experience: IExperience[];
+
+  constructor(private expService: ExperienceService) {
+    this.experience = this.expService.experience;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { MatIconModule } from "@angular/material/icon";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -16,11 +16,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 })
 export class NavigationMenuComponent {
   public showNavOptions: boolean = true;
-
-  @ViewChild('navOptions') navOptions: ElementRef;
-  @ViewChild('portfolio') portfolio: ElementRef;
-  @ViewChild('connect') connect: ElementRef;
-  @ViewChild('settings') settings: ElementRef;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
