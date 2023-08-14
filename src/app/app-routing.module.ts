@@ -18,8 +18,8 @@ const routes: Routes = [
     loadComponent: () => import('./about/about.component').then(m => m.AboutComponent),
   },
   {
-    path: 'connect',
-    loadComponent: () => import('./connect/connect.component').then(m => m.ConnectComponent),
+    path: 'interests',
+    loadComponent: () => import('./interests/interests.component').then(m => m.InterestsComponent),
   },
   {
     path: 'portfolio',

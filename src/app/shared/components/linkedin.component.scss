@@ -1,0 +1,5 @@
+@import '../../../styles/mixins';
+
+#linkedin-logo {
+  @include standard-img;
+}

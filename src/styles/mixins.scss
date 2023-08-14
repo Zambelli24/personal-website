@@ -7,3 +7,12 @@
   position: relative;
   top: 50px;
 }
+
+@mixin standard-img {
+  margin: 0 8px;
+  height: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

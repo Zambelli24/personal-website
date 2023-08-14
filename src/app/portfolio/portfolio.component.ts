@@ -3,6 +3,7 @@ import { ProjectsService } from "../services/projects.service";
 import { IProject } from "../projects/project.interface";
 import { CommonModule } from "@angular/common";
 import { PortfolioItemComponent } from "./portfolio-item/portfolio-item.component";
+import { ConnectComponent } from "../connect/connect.component";
 
 @Component({
   standalone: true,
@@ -11,6 +12,7 @@ import { PortfolioItemComponent } from "./portfolio-item/portfolio-item.componen
   styleUrls: ['./portfolio.component.scss'],
   imports: [
     CommonModule,
+    ConnectComponent,
     PortfolioItemComponent,
   ]
 })
