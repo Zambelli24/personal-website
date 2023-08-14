@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
-import { LinkedInComponent } from "../shared/components/linkedin.component";
+import { Component } from '@angular/core';
+import { LinkedInComponent } from '../shared/components/linkedin.component';
 
 @Component({
   standalone: true,

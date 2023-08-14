@@ -1,6 +1,6 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import * as experience from '../about/experience';
-import { IExperience } from "../about/experience/experience.interface";
+import { IExperience } from '../about/experience/experience.interface';
 
 @Injectable({
   providedIn: 'root',

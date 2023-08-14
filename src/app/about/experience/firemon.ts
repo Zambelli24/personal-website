@@ -1,5 +1,5 @@
-import { TECHNOLOGIES } from "src/app/shared/constants/technologies";
-import { IExperience } from "./experience.interface";
+import { TECHNOLOGIES } from 'src/app/shared/constants/technologies';
+import { IExperience } from './experience.interface';
 
 export const FireMonExp: IExperience = {
   company: 'FireMon',

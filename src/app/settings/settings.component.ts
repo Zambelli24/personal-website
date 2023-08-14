@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { ColorThemeService } from "../services/color-theme.service";
+import { ColorThemeService } from '../services/color-theme.service';
 
 @Component({
   standalone: true,

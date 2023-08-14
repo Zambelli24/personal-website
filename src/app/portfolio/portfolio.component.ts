@@ -1,9 +1,9 @@
-import { Component } from "@angular/core";
-import { ProjectsService } from "../services/projects.service";
-import { IProject } from "../projects/project.interface";
-import { CommonModule } from "@angular/common";
-import { PortfolioItemComponent } from "./portfolio-item/portfolio-item.component";
-import { ConnectComponent } from "../connect/connect.component";
+import { Component } from '@angular/core';
+import { ProjectsService } from '../services/projects.service';
+import { IProject } from '../projects/project.interface';
+import { CommonModule } from '@angular/common';
+import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
+import { ConnectComponent } from '../connect/connect.component';
 
 @Component({
   standalone: true,

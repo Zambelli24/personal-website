@@ -1,5 +1,5 @@
-import { TECHNOLOGIES } from "../shared/constants/technologies";
-import { IProject } from "./project.interface";
+import { TECHNOLOGIES } from '../shared/constants/technologies';
+import { IProject } from './project.interface';
 
 export const BoundAthleteProject: IProject = {
   description: 'A social networking platform for high school athletes to connect with coaches and other athletes. The goal of the platform is to education student athletes about the recruiting process. The platform serves as their home base for finding the right college to match their desires at the collegiate level.',

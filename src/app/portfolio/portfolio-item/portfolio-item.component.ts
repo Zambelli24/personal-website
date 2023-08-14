@@ -1,6 +1,6 @@
-import { CommonModule } from "@angular/common";
-import { Component, Input } from "@angular/core";
-import { IProject } from "src/app/projects/project.interface";
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { IProject } from 'src/app/projects/project.interface';
 
 @Component({
   standalone: true,
