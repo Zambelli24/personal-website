@@ -22,6 +22,11 @@ export enum TECHNOLOGY_LOGOS {
   TYPESCRIPT = 'assets/logos/typescript.png',
   WEBPACK = 'assets/logos/webpack.png',
   AUTH0 = 'assets/logos/auth0.png',
+  MICROSTRATEGY = 'assets/logos/microstrategy.png',
+  POWERPOINT = 'assets/logos/powerpoint.png',
+  EXCEL = 'assets/logos/excel.png',
+  WORD = 'assets/logos/word.png',
+  PYTHON = 'assets/logos/python.png',
 }
 
 export enum TECHNOLOGY_NAMES {
@@ -48,6 +53,11 @@ export enum TECHNOLOGY_NAMES {
   TYPESCRIPT = 'TypeScript',
   WEBPACK = 'Webpack',
   AUTH0 = 'Auth0',
+  MICROSTRATEGY = 'MicroStrategy',
+  POWERPOINT = 'PowerPoint',
+  EXCEL = 'Excel',
+  WORD = 'Word',
+  PYTHON = 'Python',
 }
 
 export const TECHNOLOGIES = {
@@ -142,5 +152,25 @@ export const TECHNOLOGIES = {
   AUTH0: {
     logo: TECHNOLOGY_LOGOS.AUTH0,
     name: TECHNOLOGY_NAMES.AUTH0,
+  },
+  MICROSTRATEGY: {
+    logo: TECHNOLOGY_LOGOS.MICROSTRATEGY,
+    name: TECHNOLOGY_NAMES.MICROSTRATEGY,
+  },
+  POWERPOINT: {
+    logo: TECHNOLOGY_LOGOS.POWERPOINT,
+    name: TECHNOLOGY_NAMES.POWERPOINT,
+  },
+  EXCEL: {
+    logo: TECHNOLOGY_LOGOS.EXCEL,
+    name: TECHNOLOGY_NAMES.EXCEL,
+  },
+  WORD: {
+    logo: TECHNOLOGY_LOGOS.WORD,
+    name: TECHNOLOGY_NAMES.WORD,
+  },
+  PYTHON: {
+    logo: TECHNOLOGY_LOGOS.PYTHON,
+    name: TECHNOLOGY_NAMES.PYTHON,
   },
 }
