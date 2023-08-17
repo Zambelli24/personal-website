@@ -7,4 +7,5 @@ export interface IExperience {
   keyResponsibilities: string[];
   title: string;
   technologies: any[];
+  type: 'pro' | 'intern';
 }

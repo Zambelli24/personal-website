@@ -1,6 +1,7 @@
 <h1>Professional Experience</h1>
 <div *ngFor="let exp of experience">
   <h2>{{ exp.company }}</h2>
+  <h6 *ngIf="exp.type === 'intern'">Internship</h6>
   <span>{{ exp.startDate }} - {{ exp.endDate }}</span>
   <p>{{ exp.description }}</p>
   <ul>
@@ -14,30 +15,8 @@
          title="{{ tech.name }}">
   </div>
 </div>
+
 <div>
-
-  <h1>Internships</h1>
-
-  <h2>Merck Cloud Services Summer Intern</h2>
-  <span>Summer 2018</span>
-
-  <ul>
-    <li>Worked on an auto-remediation script using AWS Lambda triggered automatically upon alert from 3rd party security software</li>
-    <li>Incremented the functionality of the access control system used in the AWS environment</li>
-    <li>Created various other tool scripts for collecting data about services running through AWS</li>
-  </ul>
-
-  <h2>Web Developer in Partnership with Merck</h2>
-  <span>Summer 2016 & 2017</span>
-  <ul>
-    <li>Collaborated on a health IoT project for raspberry pi leveraging the capabilities of Alexa and Google Home</li>
-    <li>Worked with Flask to redefine the API for a preexisting system.</li>
-    <li>Leveraged Docker in order to turn a system with parts running on multiple machines into one where everything runs on the same machine.</li>
-    <li>Worked with other students to improve a web application called Home Healthkit. The Home Healthkit is a system that allows doctors to store all of a patient's vitals in one place. The system leveraged the capabilities of a Raspberry Pi 3, making it very portable.</li>
-    <li>Collaborated with employees of Merck on a weekly basis</li> 
-    <li>Assisted in the creation of a project proposal to Merck</li>
-  </ul>
-
   <h1>Education</h1>
 
   <h2>Moravian University</h2>

@@ -26,5 +26,6 @@ export const CAIExp: IExperience = {
     TECHNOLOGIES.POWERPOINT,
     TECHNOLOGIES.EXCEL,
     TECHNOLOGIES.WORD,
-  ]
+  ],
+  type: 'pro',
 };

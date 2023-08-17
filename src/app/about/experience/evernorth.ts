@@ -19,5 +19,6 @@ export const EvernorthExp: IExperience = {
     TECHNOLOGIES.NODEJS,
     TECHNOLOGIES.HTML,
     TECHNOLOGIES.SCSS,
-  ]
+  ],
+  type: 'pro',
 }

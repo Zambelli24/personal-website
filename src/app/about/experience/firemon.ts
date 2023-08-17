@@ -32,5 +32,6 @@ export const FireMonExp: IExperience = {
     TECHNOLOGIES.JAVASCRIPT,
     TECHNOLOGIES.WEBPACK,
     TECHNOLOGIES.AUTH0,
-  ]
+  ],
+  type: 'pro',
 }

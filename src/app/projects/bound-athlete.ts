@@ -19,14 +19,17 @@ export const BoundAthleteProject: IProject = {
     TECHNOLOGIES.HEROKU,
     TECHNOLOGIES.NGROK,
     TECHNOLOGIES.JAVASCRIPT,
+    TECHNOLOGIES.PYTHON
   ],
   link: 'https://boundathlete.com/',
   logo: 'assets/project-logos/bound-athlete.png',
   key: 'bound-athlete',
   name: 'Bound Athlete',
   responsibilities: [
-    'Lead all frontend, backend and API development',
+    'Lead all frontend, backend and API development as well as testing',
     'Manage AWS infrastructure and deployment',
     'Drive business value through technical solutions',
+    'Develop scripting and automation to improve development and deployment processes',
+    'Enhance and improve the UX to ensure user satisfaction'
   ],
 }
