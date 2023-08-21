@@ -3,3 +3,11 @@
 :host {
   @include page-content;
 }
+
+.edu-item {
+  @include card;
+}
+
+img {
+  @include standard-img;
+}

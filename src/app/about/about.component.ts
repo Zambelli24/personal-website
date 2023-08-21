@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ExperienceService } from '../services/experience.service';
-import { IExperience } from './experience/experience.interface';
+import { ConnectComponent } from '../connect/connect.component';
+import { EducationService } from '../services/education.service';
+import { IEducation } from './education/education.interface';
 
 @Component({
   standalone: true,
@@ -10,12 +11,13 @@ import { IExperience } from './experience/experience.interface';
   styleUrls: ['./about.component.scss'],
   imports: [
     CommonModule,
+    ConnectComponent,
   ]
 })
 export class AboutComponent {
-  experience: IExperience[];
+  education: IEducation[];
 
-  constructor(private expService: ExperienceService) {
-    this.experience = this.expService.experience;
+  constructor(private eduService: EducationService) {
+    this.education = this.eduService.education;
   }
 }

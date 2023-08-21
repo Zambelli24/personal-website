@@ -1,0 +1,18 @@
+<h1>Professional Experience</h1>
+<div *ngFor="let exp of experience">
+  <h2>{{ exp.company }}</h2>
+  <h6 *ngIf="exp.type === 'intern'">Internship</h6>
+  <span>{{ exp.startDate }} - {{ exp.endDate }}</span>
+  <p>{{ exp.description }}</p>
+  <ul>
+    <li *ngFor="let resp of exp.keyResponsibilities">{{ resp }}</li>
+  </ul>
+  <div class="logos-container">
+    <img class="tech-logo"
+         *ngFor="let tech of exp.technologies"
+         src="{{ tech.logo }}"
+         alt="{{ tech.name }}"
+         title="{{ tech.name }}">
+  </div>
+</div>
+<app-connect></app-connect>

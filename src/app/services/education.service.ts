@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import * as experience from '../experience/experience';
-import { IExperience } from '../experience/experience/experience.interface';
+import * as education from '../about/education';
+import { IEducation } from '../about/education/education.interface';
 import { MONTHS } from '../shared/constants/months';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ExperienceService {
-  private _experience: IExperience[];
+export class EducationService {
+  private _education: IEducation[];
 
   constructor() {
-    this._experience = this._sortExp(Object.keys(experience).map(key => (experience as any)[key]));
+    this._education = this._sortExp(Object.keys(education).map(key => (education as any)[key]));
   }
 
-  get experience(): IExperience[] {
-    return this._experience;
+  get education(): IEducation[] {
+    return this._education;
   }
 
-  private _sortExp = (expList: IExperience[]): IExperience[] => {
+  private _sortExp = (expList: IEducation[]): IEducation[] => {
     return expList.sort((a, b) => {
       if (a.endDate === 'Present') {
         return -1;

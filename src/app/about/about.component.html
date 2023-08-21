@@ -1,83 +1,39 @@
-<h1>Professional Experience</h1>
-<div *ngFor="let exp of experience">
-  <h2>{{ exp.company }}</h2>
-  <h6 *ngIf="exp.type === 'intern'">Internship</h6>
-  <span>{{ exp.startDate }} - {{ exp.endDate }}</span>
-  <p>{{ exp.description }}</p>
+<p>Thank you for visiting my website! I wrote this in Angular from scratch. My name is Nick Zambelli. I am a skilled and passionate human being who pursuits a variety of interests. I live life to the fullest and have an endless amount of drive. My career in software engineering is just getting. I am extremely driven, constantly seeking to solve problem in the most efficient and elegant way. You will find that although I do not have the most experience, I am still a world class engineer. My primary skill is frontend development and I am more than capable of working the full stack. I am constantly learning and growing, always looking to expand my knowledge. I find myself constantly challenging to status quo and striving to do things in the most effective and robust way possible. Outside of my career, I love staying active and am extremely passioante about my health. As a former collegiate football player, I know how import it is to take care of yourself.</p>
+<app-connect></app-connect>
+<h1>Education</h1>
+<div *ngFor="let edu of education" class="edu-item">
+  <h2>{{ edu.name }}</h2>
+  <img src="{{ edu.logo }}" alt="{{ edu.name }}" title="{{ edu.name }}" />
+  <h4>{{ edu.location }}</h4>
+  <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
+
+  <h6>Achievements</h6>
   <ul>
-    <li *ngFor="let resp of exp.keyResponsibilities">{{ resp }}</li>
+    <li *ngFor="let ach of edu.achievements">{{ ach }}</li>
   </ul>
-  <div class="logos-container">
-    <img class="tech-logo"
-         *ngFor="let tech of exp.technologies"
-         src="{{ tech.logo }}"
-         alt="{{ tech.name }}"
-         title="{{ tech.name }}">
+
+  <h6>Athletics</h6>
+  <div *ngFor="let sport of edu.athletics">
+    <span>{{ sport.name }}</span>
+    <span>{{ sport.positions }}</span>
+    <span>{{ sport.years }}</span>
+
+    <h6>Achievements</h6>
+    <ul>
+      <li *ngFor="let ach of sport.achievements">{{ ach }}</li>
+    </ul>
   </div>
+
+  <div *ngIf="edu.extraCirriculars.length">
+    <h6>Extra Cirriculars</h6>
+    <div *ngFor="let extra of edu.extraCirriculars">
+      <span>{{ extra.description }}</span>
+      <ul>
+        <li *ngFor="let detail of extra.details">{{ detail }}</li>
+      </ul>
+    </div>
+  </div>
+   
 </div>
 
-<div>
-  <h1>Education</h1>
-
-  <h2>Moravian University</h2>
-  <span>Fall 2015 - Spring 2019</span>
-
-  <h3>Academic Career</h3>
-  <ul>
-    <li>Graduated with a 4.0 GPA</li>
-    <li>Holds a BS in Computer Science</li>
-    <li>Majored in Economics and Minored in Math</li>
-    <li>Member of 5 honor societies</li>
-    <ul>
-      <li>Omicron Delta Kappa (ODK)</li>
-      <li>Eta Sigma (PES)</li>
-      <li>Chi Alpha Sigma (CAS)</li>
-      <li>Omicron Delta Epsilon (ODE)</li>
-      <li>Alpha Alpha Alpha (AAA)</li>
-    </ul>
-  </ul>
-
-  <h3>Athletic Career</h3>
-  <ul>
-    <li>4 year starter for the Moravian football team recording 200+ tackles and 8 interceptions</li>
-    <li>2 year team captain at Moravin</li>
-    <li>Academic All-American 1st team (2017, 2018)</li>
-    <li>Centennial Conference Scholar-Athlete of the Year (2017)</li>
-  </ul>
-
-  <h3>Campus Involvement</h3>
-  <ul>
-    <li>Economics, Mathematics, and Computer Science tutor (4-10 hours/week)</li>
-    <li>Senior Class Gift Committee member helping organize events and encourage donations</li>
-    <li>Member of Omicron Gamma Omega (OGO) for 7 semesters</li>
-    <ul>
-      <li>Vice President for 4 semesters</li>
-      <li>Academic Chair for 2 semesters</li>
-      <li>Contributed to 10% increase in organizational GPA</li>
-    </ul>
-  </ul>
-
-  <h2>Parkland High School</h2>
-  <span>Fall 2011 - Spring 2015</span>
-
-  <h3>Academic Career</h3>
-  <ul>
-    <li>Graduated with >4.0 GPA</li>
-    <li>Member of the National Honor Society</li>
-    <li>Member of the National English Honor Society</li>
-  </ul>
-  <h3>Athletic Career</h3>
-  <h4>Track & Field</h4>
-  <ul>
-    <li>3x varsity letter winner</li>
-    <li>Voted team MVP senior season</li>
-    <li>Competed regularly in 5 different events (300m hurdles, 4x400m relay 4x800m relay, 400m, 800m)</li>
-  </ul>
-  <h4>Football</h4>
-  <ul>
-    <li>2 year starter at Defensive Back</li>
-    <li>Played WR and QB on offense</li>
-    <li>3x varsity letter winner at Parkland</li>
-    <li>3x District champion</li>
-  </ul>
-</div>
+<app-connect></app-connect>
