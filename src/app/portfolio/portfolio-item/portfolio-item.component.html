@@ -14,14 +14,14 @@
       {{ resp }}
   </ul>
 
-  <h3>Technologies & Languages</h3>
-  <div class="logos-container">
-    <img class="tech-logo"
-         *ngFor="let tech of project.technologies"
-         src="{{ tech.logo }}"
-         alt="{{ tech.name }}"
-         title="{{ tech.name }}">
-  </div>
 </div>
 
+<h3>Technologies & Languages</h3>
+<div class="technologies">
+  <img class="tech-logo"
+       *ngFor="let tech of project.technologies"
+       src="{{ tech.logo }}"
+       alt="{{ tech.name }}"
+       title="{{ tech.name }}">
+</div>
 

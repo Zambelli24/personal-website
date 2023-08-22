@@ -3,3 +3,12 @@
 :host {
   @include page-content;
 }
+
+.exp-item {
+  @include card;
+  padding-bottom: 0;
+}
+
+.technologies {
+  @include card-bottom;
+}

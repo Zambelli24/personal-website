@@ -2,6 +2,7 @@
 
 :host {
   @include card;
+  padding-bottom: 0px;
 }
 
 .project-header {
@@ -22,4 +23,8 @@
       background-color: white;
     }
   }
+}
+
+.technologies {
+  @include card-bottom;
 }

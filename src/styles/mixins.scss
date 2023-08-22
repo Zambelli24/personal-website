@@ -20,10 +20,21 @@
 @mixin card {
   align-items: center;
   border-radius: 8px;
+  box-shadow: 2px 2px 5px var(--secondary-color);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin: 20px 0;
   padding: 10px;
-  box-shadow: 2px 2px 5px var(--secondary-color);
-  margin: 10px 0;
-  box-sizing: border-box;
+}
+
+@mixin card-bottom {
+  background-color: var(--secondary-color);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5px 10px;
+  width: 100%;
 }
