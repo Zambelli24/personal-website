@@ -1,4 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+$my-palette: mat.$indigo-palette;
+
 @import 'buttons';
 @import 'logos';
 @import 'mixins';
@@ -8,11 +11,11 @@ body {
   margin: 0;
 }
 
-h1 {
+span, p, ul, ol, h1, h2, h3, h4, h5, h6 {
   color: var(--text-color);
-  margin: 0;
+  font-family: var(--font-family);
 }
 
-span, p, ul, ol, h2, h3 {
-  color: var(--text-color)
+button {
+  font-family: var(--font-family);
 }

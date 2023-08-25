@@ -5,3 +5,14 @@
     (change)="changeTheme()"
   ></mat-slide-toggle>
 </div>
+
+<div class="setting-option">
+  <span>Font Style</span>
+  <mat-select [formControl]="fontSelector">
+    <mat-option value="">Default</mat-option>
+    <mat-option value="cursive">Cursive</mat-option>
+    <mat-option value="chalky">Chalk</mat-option>
+    <mat-option value="bold">Bold</mat-option>
+    <mat-option value="marker">Marker</mat-option>
+  </mat-select>
+</div>

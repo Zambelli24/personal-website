@@ -12,6 +12,8 @@ body {
   --shadow-color: #999;
 
   --banner-height: 50px;
+
+  --font-family: 'Optima', 'sans-serif';
 }
 
 body.dark {
@@ -26,4 +28,20 @@ body.dark {
   --button-hover-bg: #999;
   --app-background-color: #333;
   --shadow-color: #aaa;
+}
+
+body.cursive {
+  --font-family: 'Bradley Hand', 'cursive';
+}
+
+body.bold {
+  --font-family: 'Impact', 'sans-serif';
+}
+
+body.chalky {
+  --font-family: 'Chalkduster', 'sans-serif';
+}
+
+body.marker {
+  --font-family: 'Marker Felt', 'sans-serif';
 }
