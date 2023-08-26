@@ -32,9 +32,8 @@
   background-color: var(--secondary-color);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   padding: 5px 10px;
   width: 100%;
 }

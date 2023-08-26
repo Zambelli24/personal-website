@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ConnectComponent } from '../connect/connect.component';
 import { EducationService } from '../services/education.service';
 import { IEducation } from './education/education.interface';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   standalone: true,
@@ -12,6 +13,7 @@ import { IEducation } from './education/education.interface';
   imports: [
     CommonModule,
     ConnectComponent,
+    MatIconModule,
   ]
 })
 export class AboutComponent {

@@ -11,3 +11,37 @@
 img {
   @include standard-img;
 }
+
+.pillars {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+
+  .site-pillar {
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+
+    mat-icon {
+      color: var(--secondary-text-color) !important;
+      font-size: 50px;
+      height: 50px;
+      width: 50px;
+    }
+
+    h3, span {
+      color: var(--secondary-text-color) !important;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pillars {
+    grid-template-columns: 50% 50%;
+  }
+}

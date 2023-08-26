@@ -9,6 +9,10 @@
   padding-bottom: 0;
 }
 
+h4 {
+  margin-bottom: 5px;
+}
+
 .technologies {
   @include card-bottom;
 }
