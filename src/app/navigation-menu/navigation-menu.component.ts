@@ -19,7 +19,13 @@ export class NavigationMenuComponent {
 
   private _isLargeScreen: boolean = true;
 
-  constructor(protected router: Router) {}
+  constructor(protected router: Router) {
+    const initialWidth = window.innerWidth;
+    if (initialWidth < 750) {
+      this._isLargeScreen = false;
+      this.showNavOptions = false;
+    }
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
