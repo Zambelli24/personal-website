@@ -5,31 +5,34 @@
 <div class="pillars">
   <div class="site-pillar">
     <mat-icon fontIcon="shutter_speed"></mat-icon> 
-    <h3>Efficient</h3>
-    <span>A slow site is "no go" site</span>
+    <h3 class="pillar-name">Efficient</h3>
+    <span>Inefficiency breeds latency and no one will use a slow site</span>
   </div>
   
   <div class="site-pillar">
     <mat-icon fontIcon="mobile_friendly"></mat-icon> 
-    <h3>Responsive</h3>
+    <h3 class="pillar-name">Responsive</h3>
     <span>You can't reach all users if you cannot support any device</span>
   </div>
   
   <div class="site-pillar">
     <mat-icon fontIcon="view_module"></mat-icon> 
-    <h3>Flexible</h3>
+    <h3 class="pillar-name">Flexible</h3>
     <span>We live in a word of constant change and our websites need to be ready</span>
   </div>
   
   <div class="site-pillar">
     <mat-icon fontIcon="verified_user"></mat-icon> 
-    <h3>Intuitive</h3>
+    <h3 class="pillar-name">Intuitive</h3>
     <span>User friendly to the max, no tour or explanation necessary</span>
   </div>
 </div>
 
-<p>I am a skilled and passionate human being who pursuits a variety of interests. I live life to the fullest and have an endless amount of drive. My career in software engineering is just getting. I am extremely driven, constantly seeking to solve problem in the most efficient and elegant way. You will find that although I do not have the most experience, I am still a world class engineer. My primary skill is frontend development and I am more than capable of working the full stack. I am constantly learning and growing, always looking to expand my knowledge. I find myself constantly challenging to status quo and striving to do things in the most effective and robust way possible. Outside of my career, I love staying active and am extremely passioante about my health. As a former collegiate football player, I know how import it is to take care of yourself.</p>
+<h2>Let's build something beautiful together. Close collaboration helps me turn your vision into a reality!</h2>
+
 <app-connect></app-connect>
+
+<p>I am a skilled and passionate human being who pursuits a variety of interests. I live life to the fullest and have an endless amount of drive. My career in software engineering is just getting. I am extremely driven, constantly seeking to solve problem in the most efficient and elegant way. You will find that although I do not have the most experience, I am still a world class engineer. My primary skill is frontend development and I am more than capable of working the full stack. I am constantly learning and growing, always looking to expand my knowledge. I find myself constantly challenging to status quo and striving to do things in the most effective and robust way possible. Outside of my career, I love staying active and am extremely passioante about my health. As a former collegiate football player, I know how import it is to take care of yourself.</p>
 <div *ngFor="let edu of education" class="edu-item">
   <h2>{{ edu.name }}</h2>
   <img src="{{ edu.logo }}" alt="{{ edu.name }}" title="{{ edu.name }}" />
