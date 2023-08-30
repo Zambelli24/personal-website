@@ -7,6 +7,63 @@
 .exp-item {
   @include card;
   padding-bottom: 0;
+  padding-top: 0;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.02); 
+    transition: all .2s ease-in-out; 
+  }
+}
+
+.exp-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  span {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: var(--secondary-text-color);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+.exp-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  div {
+    padding: 0 5px;
+  }
+
+  h3 {
+    border-bottom: 1px dashed var(--secondary-color);
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .exp-details {
+    grid-template-columns: 100%;
+  }
 }
 
 h4 {

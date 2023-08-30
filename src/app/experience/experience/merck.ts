@@ -12,6 +12,7 @@ export const Merk2018Exp: IExperience = {
     'Incremented the functionality of the access control system used in the AWS environment',
     'Created various other tool scripts for collecting data about services running through AWS',
   ],
+  link: 'https://www.merck.com/',
   title: 'Cloud Services Summer Intern',
   technologies: [
     TECHNOLOGIES.AWS,
@@ -33,6 +34,7 @@ export const Merck2017Exp: IExperience = {
     'Worked with Flask to redefine the API for a preexisting system',
     'Leveraged Docker in order to turn a system with parts running on multiple machines into one where everything runs on the same machine',
   ],
+  link: 'https://www.merck.com/',
   title: 'Developer Intern',
   technologies: [
     TECHNOLOGIES.PYTHON,
@@ -56,6 +58,7 @@ export const Merck2016Exp: IExperience = {
     'Assisted in the creation of a project proposal to Merck.',
     'Worked with other students to improve a web application called Home Healthkit. The Home Healthkit is a system that allows doctors to store all of a patient\'s vitals in one place. The system leveraged the capabilities of a Raspberry Pi 3, making it very portable.',
   ],
+  link: 'https://www.merck.com/',
   title: 'Developer Intern',
   technologies: [
     TECHNOLOGIES.PYTHON,

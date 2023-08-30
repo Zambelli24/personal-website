@@ -20,6 +20,7 @@ export const FireMonExp: IExperience = {
     'Evaluated and aided in the selection of new employees',
     'Implemented backend solutions to support frontend changes and ensure seamless user experience',
   ],
+  link: 'https://www.firemon.com/',
   title: 'Software Engineer',
   technologies: [
     TECHNOLOGIES.ANGULAR,

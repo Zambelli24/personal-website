@@ -5,6 +5,7 @@ export interface IExperience {
   startDate: string;
   key: string;
   keyResponsibilities: string[];
+  link: string;
   title: string;
   technologies: any[];
   type: 'pro' | 'intern';

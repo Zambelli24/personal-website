@@ -12,6 +12,7 @@ export const EvernorthExp: IExperience = {
     'Performs all development, testing, and review responsibilies',
     'Leverages Agile methodologies to plan and execute all deliverables'
   ],
+  link: 'https://www.evernorth.com/',
   title: 'Senior Full Stack Engineer',
   technologies: [
     TECHNOLOGIES.ANGULAR,

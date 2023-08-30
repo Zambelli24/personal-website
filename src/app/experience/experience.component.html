@@ -1,14 +1,23 @@
-<div *ngFor="let exp of experience" class="exp-item">
-  <h1>{{ exp.company }}</h1>
-  <h3>{{ exp.title }}</h3>
-  <span>{{ exp.startDate }} - {{ exp.endDate }} {{ exp.type === 'intern' ? '(Internship)' : '' }}</span>
-  <p>{{ exp.description }}</p>
-  <div>
-    <h3>Key Responsibilities</h3>
-    <ul>
-      <li *ngFor="let resp of exp.keyResponsibilities">{{ resp }}</li>
-    </ul>
+<a *ngFor="let exp of experience" class="exp-item" href="{{ exp.link }}" target="_blank" rel="noopener">
+  <div class="exp-header">
+    <span>{{ exp.startDate }} - {{ exp.endDate }} {{ exp.type === 'intern' ? '(Internship)' : '' }}</span>
+    <h1>{{ exp.title }}</h1>
+    <h2>{{ exp.company }}</h2>
   </div>
+  
+  <div class="exp-details">
+    <div>
+      <h3>Role Overview</h3>
+      <p>{{ exp.description }}</p>
+    </div>
+    <div>
+      <h3>Key Responsibilities</h3>
+      <ul>
+        <li *ngFor="let resp of exp.keyResponsibilities">{{ resp }}</li>
+      </ul>
+    </div>
+  </div>
+
   <h4>Technologies & Languages</h4>
   <div class="technologies">
     <img class="tech-logo"
@@ -17,5 +26,5 @@
          alt="{{ tech.name }}"
          title="{{ tech.name }}">
   </div>
-</div>
+</a>
 <app-connect></app-connect>

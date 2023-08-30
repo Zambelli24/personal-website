@@ -19,6 +19,7 @@ export const CAIExp: IExperience = {
     'Co-Founded an employee resource group for young professionals to help guide them in their early career',
     'Designed requirements and helped build a python script for automating a tedious manual process',
   ],
+  link: 'https://www.cai.io/',
   technologies: [
     TECHNOLOGIES.ANGULAR,
     TECHNOLOGIES.MICROSTRATEGY,

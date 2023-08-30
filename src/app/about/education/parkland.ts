@@ -8,6 +8,20 @@ export const ParklandEdu: IEducation = {
   ],
   athletics: [
     {
+      name: 'Football',
+      achievements: [
+        '3x District XI Champions',
+        '3 year varisity letter winner',
+        '2 year starter at Safety',
+      ],
+      positions: [
+        'Safety',
+        'Wide Receiver',
+        'Quarterback',
+      ],
+      years: 'Freshamn, Sophomore, Junior, & Senior Years',
+    },
+    {
       name: 'Track & Field',
       achievements: [
         'Voted team MVP senior season',
@@ -21,7 +35,7 @@ export const ParklandEdu: IEducation = {
         '4x800m Relay',
       ],
       years: 'Sophomore, Junior, & Senior Years',
-    }
+    },
   ],
   extraCirriculars: [],
   link: 'https://www.parklandsd.org/',
