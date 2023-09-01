@@ -3,3 +3,59 @@
 :host {
   @include page-content;
 }
+
+.portfolio-item {
+  @include clickable-card;
+  padding-bottom: 0px;
+}
+
+.project-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+
+  h1 {
+    padding: 0 20px;
+  }
+}
+
+
+img {
+  height: 50px;
+
+  &#bound-athlete-logo {
+    background-color: white;
+  }
+}
+
+
+.project-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  div {
+    padding: 0 5px;
+  }
+
+  h3 {
+    border-bottom: 1px dashed var(--secondary-color);
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project-details {
+    grid-template-columns: 100%;
+  }
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+.technologies {
+  @include card-bottom;
+}

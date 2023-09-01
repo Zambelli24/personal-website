@@ -14,7 +14,7 @@ export interface IEducation {
 export interface ISport {
   achievements: string[];
   name: string;
-  positions: string[];
+  positions: string;
   years: string;
 }
 

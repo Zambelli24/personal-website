@@ -3,8 +3,8 @@ import { IEducation } from './education.interface';
 export const MoravianEdu: IEducation = {
   achievements: [
     'Graduated with a 4.0 GPA, BS in Computer Science, major in Economics and a minor in Mathematics',
-    'Charles A. Albrecht Memorial Award',
-    'Edwin L. Stockton Prize in Economics and Business',
+    'Charles A. Albrecht Memorial Award - Awarded to the senior class member/members with the best four year record at Moravian College in scholarship and effective participation in student activities.',
+    'Edwin L. Stockton Prize in Economics and Business - Awarded to the senior with the highest cumulative GPA in the Department of Economics and Business.',
     'Dean\'s List (all semesters)',
   ],
   athletics: [
@@ -18,16 +18,13 @@ export const MoravianEdu: IEducation = {
         'Male Scholar Athlete of the Year for Moravian College (2018)',
         'William V. Campbell Trophy Semifinalist (2018)',
       ],
-      positions: [
-        'Safety',
-        'Outside Linebacker',
-      ],
+      positions: 'Safety & Outside Linebacker',
       years: 'Freshman, Sophomore, Junior, & Senior Years',
     }
   ],
   extraCirriculars: [
     {
-      description: 'Member of Omicon Gamma Omega (OGO)',
+      description: 'Omicon Gamma Omega (OGO)',
       details: [
         'Held Vice President position for 4 semesters',
         'Helped organize and run events for the fraternity',
@@ -56,7 +53,7 @@ export const MoravianEdu: IEducation = {
   link: 'https://www.moravian.edu/',
   location: 'Bethlehem, PA',
   logo: 'assets/logos/moravian.png',
-  name: 'Moravian University (formerly Moravian College)',
+  name: 'Moravian University',
   key: 'moravian',
   startDate: 'September 2015',
   endDate: 'May 2019',

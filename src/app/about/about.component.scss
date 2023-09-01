@@ -4,14 +4,6 @@
   @include page-content;
 }
 
-.edu-item {
-  @include card;
-}
-
-img {
-  @include standard-img;
-}
-
 .pillars {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -48,4 +40,70 @@ img {
   .pillars {
     grid-template-columns: 50% 50%;
   }
+}
+
+.edu-item {
+  @include card;
+  padding-top: 0;
+}
+
+.edu-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  span {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: var(--secondary-text-color);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+.edu-details {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edu-section {
+  align-items: center;
+  border: 1px solid var(--secondary-color);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  width: 375px;
+
+  @media screen and (max-width: 749px) {
+    width: 100%;
+  }
+
+  h3, h5 {
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+}
+
+img {
+  @include standard-img;
 }

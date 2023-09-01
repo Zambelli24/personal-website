@@ -19,3 +19,11 @@ span, p, ul, ol, h1, h2, h3, h4, h5, h6, a {
 button {
   font-family: var(--font-family);
 }
+
+ul {
+  padding-left: 15px;
+
+  li {
+    list-style: circle;
+  }
+}

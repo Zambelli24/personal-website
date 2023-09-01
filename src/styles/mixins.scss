@@ -24,8 +24,19 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 800px;
   padding: 10px;
+}
+
+@mixin clickable-card {
+  @include card;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.02); 
+    transition: all .2s ease-in-out; 
+  }
 }
 
 @mixin card-bottom {

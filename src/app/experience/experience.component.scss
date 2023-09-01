@@ -5,15 +5,9 @@
 }
 
 .exp-item {
-  @include card;
+  @include clickable-card;
   padding-bottom: 0;
   padding-top: 0;
-  text-decoration: none;
-
-  &:hover {
-    transform: scale(1.02); 
-    transition: all .2s ease-in-out; 
-  }
 }
 
 .exp-header {
