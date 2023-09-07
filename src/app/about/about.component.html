@@ -1,6 +1,6 @@
 <h1>Welcome! Thank you for visiting my website!</h1>
 
-<h3>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/settings">settings</a> to make your experience unique!</h3>
+<h3>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/settings">settings</a> to make your experience unique.</h3>
 
 <div class="pillars">
   <div class="site-pillar">
@@ -28,12 +28,12 @@
   </div>
 </div>
 
-<h2>Let's build something beautiful together. I love working with you to help me turn your vision into a reality. Nothing gets me more excited than solving a complex problem and delivering a solution you'll love.</h2>
+<h2>Let's build something beautiful together. I relish the opportunity to work with you to help turn your vision into a reality. Nothing gets is more exciting than solving a complex problem and delivering a solution you'll love.</h2>
 
 <app-connect></app-connect>
 
 <h3>Who the heck am I?</h3>
-<p>I am a problem solver, life liver, and go getter. I find great satisfaction in finding the most effective solution to any challenge. You will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from my experience as an athlete, collegiate football player, professional and adventurer. When I'm not working, I love to exercise and compete. I am a passionate golfer. I enjoy hiking, skiing, lifting and running. I am reader, painter and a student of life. Every day is an opportunity to develop myself as a human and grow into a better man than the day before.</p>
+<p>I am a problem solver, life liver, and go getter. I find great satisfaction in finding the most effective solution to any challenge. You will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from my experience as an athlete, collegiate football player, professional and adventurer. When I'm not working, I love to exercise and compete. I am a passionate golfer. I enjoy hiking, skiing, lifting and running. I am a reader, painter and a student of life. Every day is an opportunity to develop myself as a human and grow into a better man than the day before.</p>
 
 <div *ngFor="let edu of education" class="edu-item">
   <div class="edu-header">
@@ -53,8 +53,8 @@
   
     <div class="edu-section" *ngFor="let sport of edu.athletics">
       <h3>{{ sport.name }}</h3>
-      <h5>Years: {{ sport.years }}</h5>
-      <h5>{{ sport.name === 'Track & Field' ? 'Events:' : 'Positions:' }} {{ sport.positions }}</h5>
+      <h5>{{ sport.years }}</h5>
+      <h5>{{ sport.positions }}</h5>
   
       <ul>
         <li *ngFor="let ach of sport.achievements">{{ ach }}</li>

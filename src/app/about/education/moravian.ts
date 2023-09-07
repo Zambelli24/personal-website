@@ -3,8 +3,9 @@ import { IEducation } from './education.interface';
 export const MoravianEdu: IEducation = {
   achievements: [
     'Graduated with a 4.0 GPA, BS in Computer Science, major in Economics and a minor in Mathematics',
-    'Charles A. Albrecht Memorial Award - Awarded to the senior class member/members with the best four year record at Moravian College in scholarship and effective participation in student activities.',
-    'Edwin L. Stockton Prize in Economics and Business - Awarded to the senior with the highest cumulative GPA in the Department of Economics and Business.',
+    'Earned the honor of Valedictorian for the class of 2019',
+    'Charles A. Albrecht Memorial Award - Senior with the best four year record in scholarship and effective participation in student activities.',
+    'Edwin L. Stockton Prize in Economics and Business - The senior with the highest cumulative GPA in the Department of Economics and Business.',
     'Dean\'s List (all semesters)',
   ],
   athletics: [

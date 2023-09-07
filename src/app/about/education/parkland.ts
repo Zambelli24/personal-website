@@ -3,6 +3,7 @@ import { IEducation } from './education.interface';
 export const ParklandEdu: IEducation = {
   achievements: [
     'Graduated with a 4.0+ GPA',
+    'Graduated top 50 in a class of 750 students',
     'Member of the National Honor Society',
     'Member of the National English Honor Society',
   ],
