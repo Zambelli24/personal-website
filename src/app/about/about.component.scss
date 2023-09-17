@@ -167,11 +167,11 @@ img {
         z-index: 1;
 
         &#first-personal-img {
-          transform: scale(1.75) translateX(20px);
+          transform: scale(1.75) translateX(20%);
         }
 
         &#last-personal-img {
-          transform: scale(1.75) translateX(-28px);
+          transform: scale(1.75) translateX(-20%);
         }
       }
     }
