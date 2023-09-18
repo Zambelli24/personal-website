@@ -9,6 +9,14 @@
 </div>
 
 <div class="setting-option">
+  <span>Sharp Corners</span>
+  <mat-slide-toggle
+    [checked]="useSharpCorners"
+    (change)="changeCorners()"
+  ></mat-slide-toggle>
+</div>
+
+<div class="setting-option">
   <span>Font Style</span>
   <mat-select [formControl]="fontSelector">
     <mat-option value="">Default</mat-option>

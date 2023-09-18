@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ColorThemeService } from './services/color-theme.service';
-import { FontService } from './services/font.service';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +10,10 @@ export class AppComponent {
   title = 'personal-website';
 
   constructor(
-    protected colorThemeService: ColorThemeService,
-    protected fontService: FontService,
+    protected themeService: ThemeService
   ) {
-    this.colorThemeService.getDarkModeState();
-    this.fontService.getFontFamily();
+    this.themeService.getDarkModeState();
+    this.themeService.getSharpCornersState();
+    this.themeService.getFontStyle();
   }
 }

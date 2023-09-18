@@ -16,8 +16,7 @@
   }
 
   mat-select {
-    // border: 1px solid var(--secondary-color);
-    border-radius: 8px;
+    border-radius: var(--default-border-radius);
     box-shadow: 1px 1px 3px var(--shadow-color);
     box-sizing: border-box;
     padding: 5px 10px;

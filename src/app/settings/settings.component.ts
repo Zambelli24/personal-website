@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
-import { ColorThemeService } from '../services/color-theme.service';
-import { FontService } from '../services/font.service';
+import { ThemeService } from '../services/theme.service';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
@@ -23,21 +22,26 @@ export class SettingsComponent {
   fontSelector = new FormControl();
   fontStyle: string;
   isDarkMode: boolean;
+  useSharpCorners: boolean;
 
   constructor(
-    protected colorThemeService: ColorThemeService,
-    protected fontService: FontService,
+    protected themeService: ThemeService
   ) {
-    this.fontSelector.setValue(this.fontService.getFontFamily());
-    this.isDarkMode = this.colorThemeService.getDarkModeState();
-    this.fontSelector.valueChanges.subscribe((value) => this.changeFont(value))
+    this.fontSelector.setValue(this.themeService.getFontStyle());
+    this.isDarkMode = this.themeService.getDarkModeState();
+    this.useSharpCorners = this.themeService.getSharpCornersState();
+    this.fontSelector.valueChanges.subscribe((value) => this.changeFont(value));
   }
 
   changeFont = (font: string) => {
-    this.fontService.changeFontFamily(font);
+    this.themeService.changeFontStyle(font);
   }
   
   changeTheme = () => {
-    this.colorThemeService.changeTheme();
+    this.themeService.changeTheme();
+  }
+
+  changeCorners = () => {
+    this.themeService.changeCorners();
   }
 }

@@ -11,7 +11,7 @@
   .site-pillar {
     align-items: center;
     background-color: var(--secondary-color);
-    border-radius: 8px;
+    border-radius: var(--default-border-radius);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -55,8 +55,8 @@
 
   span {
     background-color: var(--secondary-color);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: var(--default-border-radius);
+    border-top-right-radius: var(--default-border-radius);
     color: var(--secondary-text-color);
     padding: 10px;
     text-align: center;
