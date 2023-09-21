@@ -21,8 +21,15 @@ export const BoundAthleteProject: IProject = {
     TECHNOLOGIES.JAVASCRIPT,
     TECHNOLOGIES.PYTHON
   ],
+  images: [
+    'assets/projects/bound/bound-1.png',
+    'assets/projects/bound/bound-2.png',
+    'assets/projects/bound/bound-3.png',
+    'assets/projects/bound/bound-4.png',
+    'assets/projects/bound/bound-5.png',
+  ],
   link: 'https://boundathlete.com/',
-  logo: 'assets/project-logos/bound-athlete.png',
+  logo: 'assets/projects/bound/bound-athlete.png',
   key: 'bound-athlete',
   name: 'Bound Athlete',
   responsibilities: [

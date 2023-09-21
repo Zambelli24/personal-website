@@ -12,24 +12,46 @@
 .project-header {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   width: 100%;
 
   h1 {
     padding: 0 20px;
   }
-}
-
-
-img {
-  height: 50px;
-
-  &#bound-athlete-logo {
-    background-color: white;
+  
+  img {
+    height: 50px;
+  
+    &#bound-athlete-logo {
+      background-color: white;
+    }
   }
 }
 
+
+.project-images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0 15px 0;
+
+  li {
+    flex: auto;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  img {
+    object-fit: cover;
+    width: 100%;
+    vertical-align: middle;
+    margin: 0;
+  }
+}
 
 .project-details {
   display: grid;

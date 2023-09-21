@@ -2,8 +2,15 @@
   <div class="project-header">
     <img id="{{ project.key }}-logo" src="{{ project.logo }}" alt="{{ project.name }}" />
     <h1>{{ project.name }}</h1>
-    <img id="{{ project.key }}-logo" src="{{ project.logo }}" alt="{{ project.name }}" />
   </div>
+
+  <ul class="project-images">
+    <li *ngFor="let image of project.images; index as i">
+      <img src="{{ image }}"
+           alt="{{ project.name }}-image-{{ i }}"
+           title="{{ project.name }} Image {{ i }}" />
+    </li>
+  </ul>
 
   <div class="project-details">
     <div>

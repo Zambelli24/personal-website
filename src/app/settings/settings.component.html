@@ -1,28 +1,30 @@
 <h3>What better way to show off the modularity and configurability that I strive for in all my work? Change these settings however you like to make your experience on my site unique. Imagine what can be done with your vision!</h3>
 
-<div class="setting-option">
+<div class="setting-options">
   <span>Dark Mode</span>
-  <mat-slide-toggle
-    [checked]="isDarkMode"
-    (change)="changeTheme()"
-  ></mat-slide-toggle>
-</div>
+  <div class="control">
+    <mat-slide-toggle
+      [checked]="isDarkMode"
+      (change)="changeTheme()"
+    ></mat-slide-toggle>
+  </div>
 
-<div class="setting-option">
   <span>Sharp Corners</span>
-  <mat-slide-toggle
-    [checked]="useSharpCorners"
-    (change)="changeCorners()"
-  ></mat-slide-toggle>
-</div>
+  <div class="control">
+    <mat-slide-toggle
+      [checked]="useSharpCorners"
+      (change)="changeCorners()"
+    ></mat-slide-toggle>
+  </div>
 
-<div class="setting-option">
   <span>Font Style</span>
-  <mat-select [formControl]="fontSelector">
-    <mat-option value="">Default</mat-option>
-    <mat-option value="cursive">Cursive</mat-option>
-    <mat-option value="chalky">Chalk</mat-option>
-    <mat-option value="bold">Bold</mat-option>
-    <mat-option value="marker">Marker</mat-option>
-  </mat-select>
+  <div class="control">
+    <mat-select [formControl]="fontSelector">
+      <mat-option value="">Default</mat-option>
+      <mat-option value="cursive">Cursive</mat-option>
+      <mat-option value="chalky">Chalk</mat-option>
+      <mat-option value="bold">Bold</mat-option>
+      <mat-option value="marker">Marker</mat-option>
+    </mat-select>
+  </div>
 </div>

@@ -1,5 +1,6 @@
 export interface IProject {
   description: string;
+  images: string[];
   link: string;
   logo: string;
   key: string;

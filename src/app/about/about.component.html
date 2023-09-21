@@ -1,4 +1,30 @@
-<h1>Welcome! Thank you for visiting my website!</h1>
+<h1 class="section-header">About Me</h1>
+<div class="about-me">
+  <h3>I am a problem solver, life liver, and go getter. I find great satisfaction in finding the most effective solution to any challenge. You will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from my experience as an athlete, collegiate football player, professional and adventurer. </h3>
+  <h3>I love to exercise and compete. With everything I do, I strive to be the best that I can be. I am a passionate golfer. I enjoy hiking, skiing, lifting and running. I am a reader, painter and a student of life. Every day is an opportunity to develop myself as a human and grow into a better man than the day before.</h3>
+</div>
+
+<ul class="background-photos">
+  <li>
+    <img id="first-personal-img" src="assets/personal-photos/hike.jpeg" alt="hike"/>
+  </li>
+  <li>
+    <img src="assets/personal-photos/golf.jpeg" alt="golf"/>
+  </li>
+  <li>
+    <img src="assets/personal-photos/campbell-summit.JPG" alt="campbell-summit"/>
+  </li>
+  <li>
+    <img src="assets/personal-photos/beach.jpeg" alt="beach"/>
+  </li>
+  <li>
+    <img id="last-personal-img" src="assets/personal-photos/football.JPG" alt="football"/>
+  </li>
+</ul>
+
+<app-connect></app-connect>
+
+<h1 class="section-header">Working With Me</h1>
 
 <h3>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/settings">settings</a> to make your experience unique.</h3>
 
@@ -32,34 +58,7 @@
 
 <app-connect></app-connect>
 
-<div class="who-am-i">
-  <div class="about-me">
-    <h1>Who is Nick Zambelli?</h1>
-    <h3>I am a problem solver, life liver, and go getter. I find great satisfaction in finding the most effective solution to any challenge. You will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from my experience as an athlete, collegiate football player, professional and adventurer. </h3>
-    <h3>I love to exercise and compete. With everything I do, I strive to be the best that I can be. I am a passionate golfer. I enjoy hiking, skiing, lifting and running. I am a reader, painter and a student of life. Every day is an opportunity to develop myself as a human and grow into a better man than the day before.</h3>
-  </div>
-
-  <ul class="background-photos">
-    <li>
-      <img id="first-personal-img" src="assets/personal-photos/hike.jpeg" alt="hike"/>
-    </li>
-    <li>
-      <img src="assets/personal-photos/golf.jpeg" alt="golf"/>
-    </li>
-    <li>
-      <img src="assets/personal-photos/campbell-summit.JPG" alt="campbell-summit"/>
-    </li>
-    <li>
-      <img src="assets/personal-photos/beach.jpeg" alt="beach"/>
-    </li>
-    <li>
-      <img id="last-personal-img" src="assets/personal-photos/football.JPG" alt="football"/>
-    </li>
-  </ul>
-</div>
-
-
-<h1>Education</h1>
+<h1 class="section-header">Education</h1>
 <div *ngFor="let edu of education" class="edu-item">
   <div class="edu-header">
     <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
