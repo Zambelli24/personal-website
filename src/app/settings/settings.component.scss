@@ -8,6 +8,10 @@
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 20px 0;
+  
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 35% 65%;
+  }
 
   span {
     color: var(--text-color);
