@@ -26,8 +26,8 @@ const routes: Routes = [
     loadComponent: () => import('./portfolio/portfolio.component').then(m => m.PortfolioComponent),
   },
   {
-    path: 'settings',
-    loadComponent: () => import('./settings/settings.component').then(m => m.SettingsComponent)
+    path: 'style',
+    loadComponent: () => import('./style/style.component').then(m => m.StyleComponent)
   }
 ];
 

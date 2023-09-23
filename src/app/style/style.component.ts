@@ -7,9 +7,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   standalone: true,
-  selector: 'app-settings',
-  templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss'],
+  selector: 'app-style',
+  templateUrl: './style.component.html',
+  styleUrls: ['./style.component.scss'],
   imports: [
     FormsModule,
     MatFormFieldModule,
@@ -18,7 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
   ],
 })
-export class SettingsComponent {
+export class StyleComponent {
   fontSelector = new FormControl();
   fontStyle: string;
   isDarkMode: boolean;
