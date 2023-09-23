@@ -8,18 +8,23 @@
   height: var(--banner-height);
   justify-content: space-between;
   left: 0;
-  padding-left: 20px;
+  padding-left: 10px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
 
   .site-title {
+    align-items: center;
     cursor: pointer;
+    display: flex;
     margin: auto 0;
+    
+    img {
+      border-radius: 50%;
+      height: 35px;
+      margin-right: 5px;
+    }
   }
 }
 
-img {
-  margin: 0 16px;
-}
