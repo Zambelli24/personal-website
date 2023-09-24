@@ -1,5 +1,6 @@
 :host {
   height: 100%;
+  z-index: 3;
 }
 
 .nav-options {
@@ -20,6 +21,7 @@
     flex-direction: column;
     position: absolute;
     right: 0;
+    z-index: 3;
 
     .nav-btn {
       background-color: var(--primary-color);

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { NavigationMenuComponent } from '../navigation-menu/navigation-menu.component';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule, EventType } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -12,4 +12,18 @@ import { RouterModule } from '@angular/router';
     RouterModule,
   ]
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  @HostBinding('class') boxShadow: string = 'no-shadow'; 
+  isAboutPage: boolean = false;
+
+  constructor(
+    protected router: Router,
+  ) {
+    this.router.events.subscribe((event) => {
+      if (event.type === EventType.NavigationEnd) {
+        this.isAboutPage = event.url === '/about';
+        this.boxShadow = this.isAboutPage ? 'no-shadow' : '';
+      }
+    });
+  }
+}
