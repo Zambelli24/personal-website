@@ -7,6 +7,7 @@ export interface IEducation {
   logo: string;
   link: string;
   name: string;
+  photos: string[];
   startDate: string;
   endDate: string;
 }

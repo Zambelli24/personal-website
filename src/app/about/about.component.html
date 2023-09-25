@@ -1,32 +1,16 @@
 <h1 class="section-header">About Me</h1>
 <div class="about-me">
-  <h3>I am a problem solver, life liver, and go getter. I find great satisfaction in finding the most effective solution to any challenge. You will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from my experience as an athlete, collegiate football player, professional and adventurer. </h3>
-  <h3>I love to exercise and compete. With everything I do, I strive to be the best that I can be. I am a passionate golfer. I enjoy hiking, skiing, lifting and running. I am a reader, painter and a student of life. Every day is an opportunity to develop myself as a human and grow into a better man than the day before.</h3>
+  <img src="assets/personal-photos/golf.jpeg" alt="golf"/>
+  <div>
+    <h3>I am a problem solver, life liver, and go getter. I find great satisfaction in finding the most effective solution to any challenge. You will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from my experience as an athlete, collegiate football player, professional and adventurer. </h3>
+    <h3>I love to exercise and compete. With everything I do, I strive to be the best that I can be. I am a passionate golfer. I enjoy hiking, skiing, lifting and running. I am a reader, painter and a student of life. Every day is an opportunity to develop myself as a human and grow into a better man than the day before.</h3>
+  </div>
+  <img src="assets/personal-photos/beach.jpeg" alt="beach"/>
 </div>
-
-<ul class="background-photos">
-  <li>
-    <img id="first-personal-img" src="assets/personal-photos/hike.jpeg" alt="hike"/>
-  </li>
-  <li>
-    <img src="assets/personal-photos/golf.jpeg" alt="golf"/>
-  </li>
-  <li>
-    <img src="assets/personal-photos/campbell-summit.JPG" alt="campbell-summit"/>
-  </li>
-  <li>
-    <img src="assets/personal-photos/beach.jpeg" alt="beach"/>
-  </li>
-  <li>
-    <img id="last-personal-img" src="assets/personal-photos/football.JPG" alt="football"/>
-  </li>
-</ul>
 
 <app-connect></app-connect>
 
 <h1 class="section-header">Working With Me</h1>
-
-<h3>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/style">styles</a> to make your experience unique.</h3>
 
 <div class="pillars">
   <div class="site-pillar">
@@ -54,6 +38,8 @@
   </div>
 </div>
 
+<h2>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/style">styles</a> to make your experience unique.</h2>
+
 <h2>Let's build something beautiful together. I relish the opportunity to work with you to help turn your vision into a reality. Nothing is more rewarding than solving a complex problem and delivering a solution you'll love.</h2>
 
 <app-connect></app-connect>
@@ -62,9 +48,21 @@
 <div *ngFor="let edu of education" class="edu-item">
   <div class="edu-header">
     <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
-    <h1>{{ edu.name }}</h1>
-    <img src="{{ edu.logo }}" alt="{{ edu.name }}" title="{{ edu.name }}" />
-    <h4>{{ edu.location }}</h4>
+    
+    <div class="photos">
+      <div *ngIf="edu.photos.length > 0">
+        <img *ngFor="let photo of edu.photos; index as i"
+             src="{{ photo }}"
+             alt="{{ edu.key + '-img-' + i }}" />
+      </div>
+    </div>
+
+    <div class="details">
+      <h1>{{ edu.name }}</h1>
+      <img src="{{ edu.logo }}" alt="{{ edu.name }}" title="{{ edu.name }}" />
+      <h4>{{ edu.location }}</h4>
+    </div>
+
   </div>
 
   <div class="edu-details">

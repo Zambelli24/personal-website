@@ -34,6 +34,7 @@ export const ParklandEdu: IEducation = {
   logo: 'assets/logos/parkland.png',
   name: 'Parkland High School',
   key: 'parkland',
+  photos: [],
   startDate: 'September 2011',
   endDate: 'June 2015',
 }

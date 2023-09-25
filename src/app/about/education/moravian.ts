@@ -56,6 +56,9 @@ export const MoravianEdu: IEducation = {
   logo: 'assets/logos/moravian.png',
   name: 'Moravian University',
   key: 'moravian',
+  photos: [
+    'assets/personal-photos/football.JPG',
+  ],
   startDate: 'September 2015',
   endDate: 'May 2019',
 }

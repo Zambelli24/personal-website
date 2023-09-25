@@ -28,6 +28,10 @@ const routes: Routes = [
   {
     path: 'style',
     loadComponent: () => import('./style/style.component').then(m => m.StyleComponent)
+  },
+  {
+    path: '**',
+    redirectTo: '',
   }
 ];
 
