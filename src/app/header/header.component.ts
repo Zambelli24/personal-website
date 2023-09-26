@@ -14,15 +14,16 @@ import { Router, RouterModule, EventType } from '@angular/router';
 })
 export class HeaderComponent {
   @HostBinding('class') boxShadow: string = 'no-shadow'; 
-  isAboutPage: boolean = false;
+  hideBoxShadow: boolean = false;
 
   constructor(
     protected router: Router,
   ) {
     this.router.events.subscribe((event) => {
       if (event.type === EventType.NavigationEnd) {
-        this.isAboutPage = event.url === '/about';
-        this.boxShadow = this.isAboutPage ? 'no-shadow' : '';
+        const noShadowPages = ['/about', '/'];
+        this.hideBoxShadow =  noShadowPages.includes(event.urlAfterRedirects);
+        this.boxShadow = this.hideBoxShadow ? 'no-shadow' : '';
       }
     });
   }
