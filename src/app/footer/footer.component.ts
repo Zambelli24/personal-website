@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MONTHS } from '../shared/constants/months';
 import { LinkedInComponent } from '../shared/components/linkedin.component';
 
 @Component({
@@ -11,11 +10,4 @@ import { LinkedInComponent } from '../shared/components/linkedin.component';
     LinkedInComponent,
   ]
 })
-export class FooterComponent {
-  today: string;
-
-  constructor() {
-    const currMonth = new Date().getMonth();
-    this.today = MONTHS[currMonth];
-  }
-}
+export class FooterComponent {}

@@ -11,10 +11,6 @@
 @mixin standard-img {
   margin: 0 8px;
   height: 30px;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 @mixin card {
@@ -34,6 +30,7 @@
   text-decoration: none;
 
   &:hover {
+    opacity: 1;
     transform: scale(1.02); 
     transition: all .2s ease-in-out; 
   }
