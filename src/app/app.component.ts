@@ -21,18 +21,27 @@ export class AppComponent implements OnDestroy {
     this.themeService.getSharpCornersState();
     this.themeService.getFontStyle();
 
-    this.initRouterSub();
+    this._enforceScollTop();
   }
 
-  initRouterSub = () => {
+  ngOnDestroy() {
+    this.routerSub.unsubscribe();
+  }
+
+  private _enforceScollTop = () => {
     this.routerSub = this.router.events.subscribe((event) => {
         if (event.type === EventType.NavigationEnd) {
           window.scrollTo(0, 0);
         }
     });
-  }
 
-  ngOnDestroy() {
-    this.routerSub.unsubscribe();
+    window.addEventListener('load', () => {
+      const scrollTop = document.documentElement.scrollTop;
+      if (scrollTop > 0) {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 1);
+      }
+    });
   }
 }

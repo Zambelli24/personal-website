@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IExperience } from './experience/experience.interface';
 import { ExperienceService } from '../services/experience.service';
-import { ConnectComponent } from '../connect/connect.component';
 
 @Component({
   standalone: true,
@@ -11,7 +10,6 @@ import { ConnectComponent } from '../connect/connect.component';
   styleUrls: ['./experience.component.scss'],
   imports: [
     CommonModule,
-    ConnectComponent,
   ]
 })
 export class ExperienceComponent {

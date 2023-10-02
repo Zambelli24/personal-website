@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ConnectComponent } from '../connect/connect.component';
 import { EducationService } from '../services/education.service';
 import { IEducation } from './education/education.interface';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrls: ['./about.component.scss'],
   imports: [
     CommonModule,
-    ConnectComponent,
     MatIconModule,
   ]
 })

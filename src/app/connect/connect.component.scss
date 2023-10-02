@@ -5,11 +5,9 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  width: 100%;
 }
 
-img {
+img, svg {
   @include standard-img;
+  margin: 0 4px;
 }

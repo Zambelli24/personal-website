@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { LinkedInComponent } from '../shared/components/linkedin.component';
+import { Component, HostBinding } from '@angular/core';
+import { ConnectComponent } from '../connect/connect.component';
 
 @Component({
   standalone: true,
@@ -7,7 +7,27 @@ import { LinkedInComponent } from '../shared/components/linkedin.component';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   imports: [
-    LinkedInComponent,
+    ConnectComponent,
   ]
 })
-export class FooterComponent {}
+export class FooterComponent {
+  @HostBinding('class') transparent: string = 'transparent'; 
+
+  private _lastScrollTop = 0;
+
+  constructor() {
+    window.addEventListener('scroll', (event) => {
+      const currScrollTop = document.documentElement.scrollTop;
+      const isScrollingDown = currScrollTop < this._lastScrollTop;
+      const isBottom = (window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight;
+
+      if (isScrollingDown || isBottom) {
+        this.transparent = '';
+      } else {
+        this.transparent = 'transparent';
+      }
+
+      this._lastScrollTop = currScrollTop;
+    });
+  }
+}
