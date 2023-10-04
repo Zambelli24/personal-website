@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { ThemeService } from './services/theme.service';
 import { EventType, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnDestroy {
+export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'personal-website';
 
   routerSub: Subscription;
@@ -21,27 +21,26 @@ export class AppComponent implements OnDestroy {
     this.themeService.getSharpCornersState();
     this.themeService.getFontStyle();
 
-    this._enforceScollTop();
+    this._enforceScrollTop();
+  }
+
+  ngAfterViewInit() {
   }
 
   ngOnDestroy() {
     this.routerSub.unsubscribe();
   }
 
-  private _enforceScollTop = () => {
+  private _enforceScrollTop = () => {
     this.routerSub = this.router.events.subscribe((event) => {
         if (event.type === EventType.NavigationEnd) {
           window.scrollTo(0, 0);
         }
     });
 
-    window.addEventListener('load', () => {
-      const scrollTop = document.documentElement.scrollTop;
-      if (scrollTop > 0) {
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-        }, 1);
-      }
-    });
+    window.onunload = () => {
+      window.scrollTo(0, 0);
+      return;
+    }
   }
 }

@@ -11,7 +11,7 @@ import { ConnectComponent } from '../connect/connect.component';
   ]
 })
 export class FooterComponent {
-  @HostBinding('class') transparent: string = 'transparent'; 
+  @HostBinding('class') transparent: string = ''; 
 
   private _lastScrollTop = 0;
 
