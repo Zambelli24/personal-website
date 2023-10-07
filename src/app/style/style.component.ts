@@ -21,24 +21,28 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 export class StyleComponent {
   fontSelector = new FormControl();
   fontStyle: string;
-  isDarkMode: boolean;
+  colorSelector = new FormControl();
+  colorPalette: string;
   useSharpCorners: boolean;
 
   constructor(
     protected themeService: ThemeService
   ) {
     this.fontSelector.setValue(this.themeService.getFontStyle());
-    this.isDarkMode = this.themeService.getDarkModeState();
-    this.useSharpCorners = this.themeService.getSharpCornersState();
     this.fontSelector.valueChanges.subscribe((value) => this.changeFont(value));
+    
+    this.colorSelector.setValue(this.themeService.getColorPalette());
+    this.colorSelector.valueChanges.subscribe((value) => this.changeTheme(value));
+    
+    this.useSharpCorners = this.themeService.getSharpCornersState();
   }
 
   changeFont = (font: string) => {
     this.themeService.changeFontStyle(font);
   }
   
-  changeTheme = () => {
-    this.themeService.changeTheme();
+  changeTheme = (colorPalette: string) => {
+    this.themeService.changeTheme(colorPalette);
   }
 
   changeCorners = () => {

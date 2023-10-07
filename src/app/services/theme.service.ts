@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
   private _fontStyle: string;
-  private _isDarkMode = false;
+  private _colorPalette: string;
   private _useSharpCorners = false;
 
   constructor() {
-    this._isDarkMode = localStorage.getItem('darkMode') === 'true';
-    if (this._isDarkMode) {
-      document.body.classList.add('dark');
+    this._colorPalette = localStorage.getItem('colorPalette') || '';
+    if (this._colorPalette) {
+      document.body.classList.add(this._colorPalette);
     }
 
     this._useSharpCorners = localStorage.getItem('corners') === 'true';
@@ -25,14 +25,15 @@ export class ThemeService {
     }
   }
 
-  public getDarkModeState = () => this._isDarkMode;  
+  public getColorPalette = () => this._colorPalette;  
   public getSharpCornersState = () => this._useSharpCorners;
   public getFontStyle = () => this._fontStyle;
 
-  public changeTheme = () => {
-    document.body.classList.toggle('dark');
-    this._isDarkMode = !this._isDarkMode;
-    localStorage.setItem('darkMode', (this._isDarkMode).toString());
+  public changeTheme = (colorPalette: string) => {
+    this._colorPalette && document.body.classList.remove(this._colorPalette);
+    this._colorPalette = colorPalette;
+    this._colorPalette && document.body.classList.add(this._colorPalette);
+    localStorage.setItem('colorPalette', this._colorPalette);
   }
 
   public changeCorners = () => {

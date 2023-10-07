@@ -17,7 +17,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     protected router: Router,
     protected themeService: ThemeService
   ) {
-    this.themeService.getDarkModeState();
+    this.themeService.getColorPalette();
     this.themeService.getSharpCornersState();
     this.themeService.getFontStyle();
 

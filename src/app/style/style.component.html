@@ -1,12 +1,13 @@
 <h3>What better way to show off the modularity and configurability that I strive for in all my work? Change these settings however you like to make your experience on my site unique. Imagine what can be done with your vision!</h3>
 
 <div class="setting-options">
-  <span>Dark Mode</span>
+  <span>Color Palette</span>
   <div class="control">
-    <mat-slide-toggle
-      [checked]="isDarkMode"
-      (change)="changeTheme()"
-    ></mat-slide-toggle>
+    <mat-select [formControl]="colorSelector">
+      <mat-option value="">Default</mat-option>
+      <mat-option value="dark">Dark</mat-option>
+      <mat-option value="high-contrast">High Contrast</mat-option>
+    </mat-select>
   </div>
 
   <span>Sharp Corners</span>

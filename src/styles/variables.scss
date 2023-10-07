@@ -1,7 +1,7 @@
 body {
-  --primary-color: #BAFAFF;
-  --secondary-color: #FBA165;
-  --tertiary-color: #86DAF2;
+  --primary-color: #b3cee5;
+  --secondary-color: #87CEEB;
+  --tertiary-color: #405580;
   --text-color: #333;
   --secondary-text-color: white;
   --primary-btn-color: #F65C40;
@@ -10,7 +10,7 @@ body {
   --secondary-btn-text: #333;
   --button-hover-bg: #EEE;
   --app-background-color: #FFF;
-  --shadow-color: #bbb;
+  --shadow-color: #405580;
 
   --banner-height: 50px;
 
@@ -32,6 +32,21 @@ body.dark {
   --button-hover-bg: #999;
   --app-background-color: #333;
   --shadow-color: #777;
+}
+
+body.high-contrast {
+  --primary-color: #BAFAFF;
+  --secondary-color: #FBA165;
+  --tertiary-color: #86DAF2;
+  --text-color: #333;
+  --secondary-text-color: white;
+  --primary-btn-color: #F65C40;
+  --primary-btn-text: #FFF;
+  --secondary-btn-color: #FFF;
+  --secondary-btn-text: #333;
+  --button-hover-bg: #EEE;
+  --app-background-color: #FFF;
+  --shadow-color: #bbb;
 }
 
 body.cursive {
