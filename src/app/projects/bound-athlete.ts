@@ -2,7 +2,7 @@ import { TECHNOLOGIES } from '../shared/constants/technologies';
 import { IProject } from './project.interface';
 
 export const BoundAthleteProject: IProject = {
-  description: 'A social networking platform for high school athletes to connect with coaches and other athletes. The goal of the platform is to education student athletes about the recruiting process. The platform serves as their home base for finding the right college to match their desires at the collegiate level.',
+  description: 'My first software development project. I began by assisting one other developer and within a few months I took ownership of all aspects of the development lifecycle. Bound Athlete is a social networking platform for high school athletes to connect with coaches and other athletes. The goal of the platform is to education student athletes about the recruiting process. The platform serves as their home base for finding the right college to match their desires at the collegiate level.',
   technologies: [
     TECHNOLOGIES.REACT,
     TECHNOLOGIES.NODEJS,
@@ -33,10 +33,10 @@ export const BoundAthleteProject: IProject = {
   key: 'bound-athlete',
   name: 'Bound Athlete',
   responsibilities: [
-    'Lead all frontend, backend and API development as well as testing',
-    'Manage AWS infrastructure and deployment',
-    'Drive business value through technical solutions',
-    'Develop scripting and automation to improve development and deployment processes',
-    'Enhance and improve the UX to ensure user satisfaction'
+    'Leads all software development and testing',
+    'Manages AWS infrastructure and deployment',
+    'Drives business value through technical solutions',
+    'Leverages automation and scripting to improve process efficiency',
+    'Enhances UX continuously to ensure user satisfaction'
   ],
 }

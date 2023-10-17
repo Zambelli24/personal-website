@@ -3,16 +3,16 @@ import { IExperience } from './experience.interface';
 
 export const EvernorthExp: IExperience = {
   company: 'Evernorth Health Services',
-  description: 'I am currently a Senior Full Stack Engineer contracted through Solomon Page. I am responsibile for an internal solution helping our custom service teams assist customers in optimizing their healthcare and benefits plans.',
+  description: 'I am a Senior Full Stack Engineer contracted through Solomon Page. I am responsibile for an internal solution helping our custom service teams assist customers in optimizing their healthcare and benefits plans. Within 6 months I have elevated my responsibilities to leading numerous re-architecturing efforts while gaining the trust of my team. I am frequently relied upon for critical fixes and ensuring code quality.',
   endDate: 'Present',
   startDate: 'June 2023',
   key: 'evernorth',
   keyResponsibilities: [
-    'Implements modular solutions to complex problems allowing for rapid development and deployment',
-    'Performs all development, testing, and review responsibilies',
+    'Implements modular solutions to maximize code reuse',
+    'Performs development, testing, and code reviews',
     'Leverages Agile methodologies to plan and execute all deliverables',
-    'Refactors legacy code to improve performance and maintainability',
-    'Builds new new features and functionality to meet business needs',
+    'Re-architects legacy code to improve performance and maintainability',
+    'Enhances UI and data structures to maximize efficiency and UX',
   ],
   link: 'https://www.evernorth.com/',
   title: 'Senior Full Stack Engineer',
