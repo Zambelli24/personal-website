@@ -1,5 +1,7 @@
 import { Component, HostBinding } from '@angular/core';
 import { ConnectComponent } from '../connect/connect.component';
+import { faAngular } from '@fortawesome/free-brands-svg-icons';
+import { IconComponent } from '../shared/components/icon.component';
 
 @Component({
   standalone: true,
@@ -8,10 +10,13 @@ import { ConnectComponent } from '../connect/connect.component';
   styleUrls: ['./footer.component.scss'],
   imports: [
     ConnectComponent,
+    IconComponent,
   ]
 })
 export class FooterComponent {
-  @HostBinding('class') transparent: string = ''; 
+  @HostBinding('class') transparent: string = '';
+
+  faAngular = faAngular;
 
   private _lastScrollTop = 0;
 

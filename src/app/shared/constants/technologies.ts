@@ -1,39 +1,29 @@
-export enum TECHNOLOGY_LOGOS {
-  ALEXA = 'assets/logos/alexa.png',
-  ANGULAR =  'assets/logos/angular.png',
-  ANGULARJS = 'assets/logos/angularjs.png',
-  AUTH0 = 'assets/logos/auth0.png',
-  AWS = 'assets/logos/aws.png',
-  AWS_IAM = 'assets/logos/aws-iam.png',
-  AWS_LAMBDA = 'assets/logos/aws-lambda.png',
-  AWS_RDS = 'assets/logos/aws-rds.png',
-  AWS_S3 = 'assets/logos/aws-s3.png',
-  DOCKER = 'assets/logos/docker.png',
-  EXCEL = 'assets/logos/excel.png',
-  FLASK = 'assets/logos/flask.png',
-  HEROKU = 'assets/logos/heroku.png',
-  HTML = 'assets/logos/html.png',
-  JAVA = 'assets/logos/java.png',
-  JAVASCRIPT = 'assets/logos/javascript.png',
-  JENKINS = 'assets/logos/jenkins.png',
-  MICROSTRATEGY = 'assets/logos/microstrategy.png',
-  MONGODB = 'assets/logos/mongodb.png',
-  MYSQL = 'assets/logos/mysql.png',
-  NGROK = 'assets/logos/ngrok.jpeg',
-  NETLIFY = 'assets/logos/netlify.png',
-  NODEJS = 'assets/logos/nodejs.png',
-  POWERPOINT = 'assets/logos/powerpoint.png',
-  PYTHON = 'assets/logos/python.png',
-  RASPBERRY_PI = 'assets/logos/raspberry-pi.png',
-  REACT = 'assets/logos/react.png',
-  RUBY = 'assets/logos/ruby.png',
-  SCSS = 'assets/logos/scss.png',
-  TWILIO = 'assets/logos/twilio.png',
-  TYPESCRIPT = 'assets/logos/typescript.png',
-  VUE = 'assets/logos/vue.png',
-  WEBPACK = 'assets/logos/webpack.png',
-  WORD = 'assets/logos/word.png',
-}
+import {
+  faAngular,
+  faAws,
+  faBitbucket,
+  faConfluence,
+  faCss3Alt,
+  faDocker,
+  faGitAlt,
+  faGithub,
+  faHtml5,
+  faJava,
+  faJenkins,
+  faJira,
+  faJs,
+  faMarkdown,
+  faMdb,
+  faNodeJs,
+  faNpm,
+  faPython,
+  faRaspberryPi,
+  faReact,
+  faSass,
+  faSlack,
+  faVuejs
+} from "@fortawesome/free-brands-svg-icons";
+import { faFileExcel, faFilePowerpoint, faFileWord } from "@fortawesome/free-solid-svg-icons";
 
 export enum TECHNOLOGY_NAMES {
   ALEXA = 'Alexa',
@@ -45,26 +35,35 @@ export enum TECHNOLOGY_NAMES {
   AWS_LAMBDA = 'AWS Lambda',
   AWS_RDS = 'AWS RDS',
   AWS_S3 = 'AWS S3',
+  BITBUCKET = 'Bitbucket',
+  CONFLUENCE = 'Confluence',
+  CSS = 'CSS',
   DOCKER = 'Docker',
   EXCEL = 'Excel',
+  GIT = 'Git',
+  GITHUB = 'GitHub',
   HEROKU = 'Heroku',
   HTML = 'HTML',
   JAVA = 'Java',
   JAVASCRIPT = 'JavaScript',
   JENKINS = 'Jenkins',
+  JIRA = 'Jira',
   FLASK = 'Flask',
+  MARKDOWN = 'Markdown',
   MICROSTRATEGY = 'MicroStrategy',
   MONGODB = 'MongoDB',
   MYSQL = 'MySQL',
   NGROK = 'Ngrok',
   NETLIFY = 'Netlify',
   NODEJS = 'NodeJs',
+  NPM = 'NPM',
   POWERPOINT = 'PowerPoint',
   PYTHON = 'Python',
   RASPBERRY_PI = 'Raspberry Pi',
   REACT = 'React',
   RUBY = 'Ruby',
   SCSS = 'SCSS',
+  SLACK = 'Slack',
   TWILIO = 'Twilio',
   TYPESCRIPT = 'TypeScript',
   VUE = 'Vue',
@@ -74,139 +73,107 @@ export enum TECHNOLOGY_NAMES {
 
 export const TECHNOLOGIES = {
   ANGULAR: {
-    logo: TECHNOLOGY_LOGOS.ANGULAR,
+    icon: faAngular,
     name: TECHNOLOGY_NAMES.ANGULAR,
   },
-  ANGULARJS: {
-    logo: TECHNOLOGY_LOGOS.ANGULARJS,
-    name: TECHNOLOGY_NAMES.ANGULARJS,
-  },
-  REACT: {
-    logo: TECHNOLOGY_LOGOS.REACT,
-    name: TECHNOLOGY_NAMES.REACT,
-  },
-  VUE: {
-    logo: TECHNOLOGY_LOGOS.VUE,
-    name: TECHNOLOGY_NAMES.VUE,
-  },
-  NODEJS: {
-    logo: TECHNOLOGY_LOGOS.NODEJS,
-    name: TECHNOLOGY_NAMES.NODEJS,
-  },
-  AWS_S3: {
-    logo: TECHNOLOGY_LOGOS.AWS_S3,
-    name: TECHNOLOGY_NAMES.AWS_S3,
-  },
   AWS: {
-    logo: TECHNOLOGY_LOGOS.AWS,
+    icon: faAws,
     name: TECHNOLOGY_NAMES.AWS,
   },
-  AWS_RDS: {
-    logo: TECHNOLOGY_LOGOS.AWS_RDS,
-    name: TECHNOLOGY_NAMES.AWS_RDS,
+  BITBUCKET: {
+    icon: faBitbucket,
+    name: TECHNOLOGY_NAMES.BITBUCKET,
   },
-  AWS_LAMBDA: {
-    logo: TECHNOLOGY_LOGOS.AWS_LAMBDA,
-    name: TECHNOLOGY_NAMES.AWS_LAMBDA,
+  CONFLUENCE: {
+    icon: faConfluence,
+    name: TECHNOLOGY_NAMES.CONFLUENCE,
   },
-  AWS_IAM: {
-    logo: TECHNOLOGY_LOGOS.AWS_IAM,
-    name: TECHNOLOGY_NAMES.AWS_IAM,
-  },
-  TWILIO: {
-    logo: TECHNOLOGY_LOGOS.TWILIO,
-    name: TECHNOLOGY_NAMES.TWILIO,
-  },
-  MYSQL: {
-    logo: TECHNOLOGY_LOGOS.MYSQL,
-    name: TECHNOLOGY_NAMES.MYSQL,
-  },
-  HTML: {
-    logo: TECHNOLOGY_LOGOS.HTML,  
-    name: TECHNOLOGY_NAMES.HTML,
-  },
-  SCSS: {
-    logo: TECHNOLOGY_LOGOS.SCSS,
-    name: TECHNOLOGY_NAMES.SCSS,
+  CSS: {
+    icon: faCss3Alt,
+    name: TECHNOLOGY_NAMES.CSS,
   },
   DOCKER: {
-    logo: TECHNOLOGY_LOGOS.DOCKER,
+    icon: faDocker,
     name: TECHNOLOGY_NAMES.DOCKER,
   },
-  NETLIFY: {
-    logo: TECHNOLOGY_LOGOS.NETLIFY,
-    name: TECHNOLOGY_NAMES.NETLIFY,
+  EXCEL: {
+    icon: faFileExcel,
+    name: TECHNOLOGY_NAMES.EXCEL,
   },
-  HEROKU: {
-    logo: TECHNOLOGY_LOGOS.HEROKU,
-    name: TECHNOLOGY_NAMES.HEROKU,
+  GIT: {
+    icon: faGitAlt,
+    name: TECHNOLOGY_NAMES.GIT,
   },
-  NGROK: {
-    logo: TECHNOLOGY_LOGOS.NGROK,
-    name: TECHNOLOGY_NAMES.NGROK,
+  GITHUB: {
+    icon: faGithub,
+    name: TECHNOLOGY_NAMES.GITHUB,
   },
-  JENKINS: {
-    logo: TECHNOLOGY_LOGOS.JENKINS,
-    name: TECHNOLOGY_NAMES.JENKINS,
+  HTML: {
+    icon: faHtml5,
+    name: TECHNOLOGY_NAMES.HTML,
   },
   JAVA: {
-    logo: TECHNOLOGY_LOGOS.JAVA,
+    icon: faJava,
     name: TECHNOLOGY_NAMES.JAVA,
   },
   JAVASCRIPT: {
-    logo: TECHNOLOGY_LOGOS.JAVASCRIPT,
+    icon: faJs,
     name: TECHNOLOGY_NAMES.JAVASCRIPT,
   },
-  TYPESCRIPT: {
-    logo: TECHNOLOGY_LOGOS.TYPESCRIPT,
-    name: TECHNOLOGY_NAMES.TYPESCRIPT,
+  JENKINS: {
+    icon: faJenkins,
+    name: TECHNOLOGY_NAMES.JENKINS,
   },
-  WEBPACK: {
-    logo: TECHNOLOGY_LOGOS.WEBPACK,
-    name: TECHNOLOGY_NAMES.WEBPACK,
+  JIRA: {
+    icon: faJira,
+    name: TECHNOLOGY_NAMES.JIRA,
   },
-  AUTH0: {
-    logo: TECHNOLOGY_LOGOS.AUTH0,
-    name: TECHNOLOGY_NAMES.AUTH0,
-  },
-  MICROSTRATEGY: {
-    logo: TECHNOLOGY_LOGOS.MICROSTRATEGY,
-    name: TECHNOLOGY_NAMES.MICROSTRATEGY,
-  },
-  POWERPOINT: {
-    logo: TECHNOLOGY_LOGOS.POWERPOINT,
-    name: TECHNOLOGY_NAMES.POWERPOINT,
-  },
-  EXCEL: {
-    logo: TECHNOLOGY_LOGOS.EXCEL,
-    name: TECHNOLOGY_NAMES.EXCEL,
-  },
-  WORD: {
-    logo: TECHNOLOGY_LOGOS.WORD,
-    name: TECHNOLOGY_NAMES.WORD,
-  },
-  PYTHON: {
-    logo: TECHNOLOGY_LOGOS.PYTHON,
-    name: TECHNOLOGY_NAMES.PYTHON,
-  },
-  FLASK: {
-    logo: TECHNOLOGY_LOGOS.FLASK,
-    name: TECHNOLOGY_NAMES.FLASK,
+  MARKDOWN: {
+    icon: faMarkdown,
+    name: TECHNOLOGY_NAMES.MARKDOWN,
   },
   MONGODB: {
-    logo: TECHNOLOGY_LOGOS.MONGODB,
+    icon: faMdb,
     name: TECHNOLOGY_NAMES.MONGODB,
   },
+  NODEJS: {
+    icon: faNodeJs,
+    name: TECHNOLOGY_NAMES.NODEJS,
+  },
+  NPM: {
+    icon: faNpm,
+    name: TECHNOLOGY_NAMES.NPM,
+  },
+  POWERPOINT: {
+    icon: faFilePowerpoint,
+    name: TECHNOLOGY_NAMES.POWERPOINT,
+  },
+  PYTHON: {
+    icon: faPython,
+    name: TECHNOLOGY_NAMES.PYTHON,
+  },
   RASPBERRY_PI: {
-    logo: TECHNOLOGY_LOGOS.RASPBERRY_PI,
+    icon: faRaspberryPi,
     name: TECHNOLOGY_NAMES.RASPBERRY_PI,
   },
-  ALEXA: {
-    logo: TECHNOLOGY_LOGOS.ALEXA,
-    name: TECHNOLOGY_NAMES.ALEXA,
+  REACT: {
+    icon: faReact,
+    name: TECHNOLOGY_NAMES.REACT,
   },
-  RUBY: {
-    logo: TECHNOLOGY_LOGOS.RUBY,
-    name: TECHNOLOGY_NAMES.RUBY,
-  }
+  SCSS: {
+    icon: faSass,
+    name: TECHNOLOGY_NAMES.SCSS,
+  },
+  SLACK: {
+    icon: faSlack,
+    name: TECHNOLOGY_NAMES.SLACK,
+  },
+  VUE: {
+    icon: faVuejs,
+    name: TECHNOLOGY_NAMES.VUE,
+  },
+  WORD: {
+    icon: faFileWord,
+    name: TECHNOLOGY_NAMES.WORD,
+  },
 }

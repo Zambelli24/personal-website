@@ -11,3 +11,11 @@ img, svg {
   @include standard-img;
   margin: 0 4px;
 }
+
+fa-icon {
+  svg {
+    @include standard-img;
+    margin: 0 4px;
+    color: red;
+  }
+}

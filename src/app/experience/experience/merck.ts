@@ -16,8 +16,7 @@ export const Merk2018Exp: IExperience = {
   title: 'Cloud Services Summer Intern',
   technologies: [
     TECHNOLOGIES.AWS,
-    TECHNOLOGIES.AWS_IAM,
-    TECHNOLOGIES.AWS_LAMBDA,
+    TECHNOLOGIES.JAVA,
     TECHNOLOGIES.PYTHON,
   ],
   type: 'intern',
@@ -37,12 +36,13 @@ export const Merck2017Exp: IExperience = {
   link: 'https://www.merck.com/',
   title: 'Developer Intern',
   technologies: [
-    TECHNOLOGIES.PYTHON,
-    TECHNOLOGIES.FLASK,
     TECHNOLOGIES.DOCKER,
+    TECHNOLOGIES.GIT,
+    TECHNOLOGIES.GITHUB,
+    TECHNOLOGIES.JIRA,
     TECHNOLOGIES.MONGODB,
+    TECHNOLOGIES.PYTHON,
     TECHNOLOGIES.RASPBERRY_PI,
-    TECHNOLOGIES.ALEXA,
   ],
   type: 'intern',
 }
@@ -61,10 +61,11 @@ export const Merck2016Exp: IExperience = {
   link: 'https://www.merck.com/',
   title: 'Developer Intern',
   technologies: [
+    TECHNOLOGIES.GIT,
+    TECHNOLOGIES.GITHUB,
+    TECHNOLOGIES.JIRA,
     TECHNOLOGIES.PYTHON,
-    TECHNOLOGIES.FLASK,
     TECHNOLOGIES.RASPBERRY_PI,
-    TECHNOLOGIES.RUBY,
   ],
   type: 'intern',
 }

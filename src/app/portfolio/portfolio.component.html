@@ -28,10 +28,13 @@
 
   <h4>Technologies & Languages</h4>
   <div class="technologies">
-    <img class="tech-logo"
-        *ngFor="let tech of project.technologies"
-        src="{{ tech.logo }}"
-        alt="{{ tech.name }}"
-        title="{{ tech.name }}">
+    <ng-container *ngFor="let tech of project.technologies">
+      <app-icon class="tech-logo" *ngIf="!!tech.icon" [icon]="tech.icon" [tooltip]="tech.name" [inverted]="true"></app-icon>
+      <img class="tech-logo"
+           *ngIf="!tech.icon"
+           src="{{ tech.logo }}"
+           alt="{{ tech.name }}"
+           title="{{ tech.name }}">
+    </ng-container>
   </div>
 </a>

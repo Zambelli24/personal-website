@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProjectsService } from '../services/projects.service';
 import { IProject } from '../projects/project.interface';
 import { CommonModule } from '@angular/common';
+import { IconComponent } from '../shared/components/icon.component';
 
 @Component({
   standalone: true,
@@ -10,6 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./portfolio.component.scss'],
   imports: [
     CommonModule,
+    IconComponent,
   ]
 })
 export class PortfolioComponent {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { LinkedInComponent } from '../shared/components/linkedin.component';
+import { faGoogle, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { IconComponent } from '../shared/components/icon.component';
 
 @Component({
   standalone: true,
@@ -7,7 +8,12 @@ import { LinkedInComponent } from '../shared/components/linkedin.component';
   templateUrl: './connect.component.html',
   styleUrls: ['./connect.component.scss'],
   imports: [
-    LinkedInComponent,
+    IconComponent,
   ]
 })
-export class ConnectComponent {}
+export class ConnectComponent {
+  faGoogle = faGoogle;
+  faInstagram = faInstagram;
+  faLinkedin = faLinkedin;
+  faXTwitter = faXTwitter;
+}

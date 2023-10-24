@@ -82,11 +82,8 @@
       text-align: center;
     }
 
-    mat-icon {
-      color: var(--secondary-text-color) !important;
-      font-size: 50px;
-      height: 50px;
-      width: 50px;
+    app-icon {
+      font-size: 25px;
     }
   }
 

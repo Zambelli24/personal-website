@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { IExperience } from './experience/experience.interface';
 import { ExperienceService } from '../services/experience.service';
+import { IconComponent } from '../shared/components/icon.component';
 
 @Component({
   standalone: true,
@@ -10,6 +11,7 @@ import { ExperienceService } from '../services/experience.service';
   styleUrls: ['./experience.component.scss'],
   imports: [
     CommonModule,
+    IconComponent,
   ]
 })
 export class ExperienceComponent {
