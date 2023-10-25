@@ -1,3 +1,5 @@
+import { ITechnology } from "src/app/shared/interfaces/technology.interface";
+
 export interface IExperience {
   company: string;
   description: string;
@@ -7,6 +9,6 @@ export interface IExperience {
   keyResponsibilities: string[];
   link: string;
   title: string;
-  technologies: any[];
+  technologies: ITechnology[];
   type: 'pro' | 'intern';
 }

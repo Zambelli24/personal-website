@@ -13,7 +13,7 @@ import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 })
 export class IconComponent implements OnInit  {
   @Input() icon: IconDefinition;
-  @Input() inverted: boolean = false;
+  @Input() inverted = false;
   @Input() tooltip: string;
 
   style = { 'color': 'var(--text-color)'};

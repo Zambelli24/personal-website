@@ -14,8 +14,8 @@ import { Subscription } from 'rxjs';
   ]
 })
 export class HeaderComponent implements OnDestroy {
-  @HostBinding('class') boxShadow: string = 'no-shadow'; 
-  hideBoxShadow: boolean = false;
+  @HostBinding('class') boxShadow = 'no-shadow'; 
+  hideBoxShadow = false;
 
   routerSub: Subscription;
 

@@ -14,14 +14,14 @@ import { IconComponent } from '../shared/components/icon.component';
   ]
 })
 export class FooterComponent {
-  @HostBinding('class') transparent: string = '';
+  @HostBinding('class') transparent = '';
 
   faAngular = faAngular;
 
   private _lastScrollTop = 0;
 
   constructor() {
-    window.addEventListener('scroll', (event) => {
+    window.addEventListener('scroll', () => {
       const currScrollTop = document.documentElement.scrollTop;
       const isScrollingDown = currScrollTop < this._lastScrollTop;
       const isBottom = (window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight;

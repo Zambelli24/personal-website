@@ -15,9 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ]
 })
 export class NavigationMenuComponent {
-  public showNavOptions: boolean = true;
+  public showNavOptions = true;
 
-  private _isLargeScreen: boolean = true;
+  private _isLargeScreen = true;
 
   constructor(protected router: Router) {
     const initialWidth = window.innerWidth;
@@ -28,14 +28,15 @@ export class NavigationMenuComponent {
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize(event: UIEvent) {
+    const target = event?.target as Window;
     // hide the menu button and remove the showing class from the menu items
-    if (!this.showNavOptions && event.target.innerWidth > 750) {
+    if (!this.showNavOptions && target.innerWidth > 750) {
       this._isLargeScreen = true;
       this.showNavOptions = true;
     }
 
-    if (this.showNavOptions && event.target.innerWidth < 750) {
+    if (this.showNavOptions && target.innerWidth < 750) {
       this._isLargeScreen = false;
       this.showNavOptions = false;
     }

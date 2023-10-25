@@ -1,3 +1,5 @@
+import { ITechnology } from "../shared/interfaces/technology.interface";
+
 export interface IProject {
   description: string;
   images: string[];
@@ -6,5 +8,5 @@ export interface IProject {
   key: string;
   name: string;
   responsibilities: string[];
-  technologies: any[];
+  technologies: ITechnology[];
 }
