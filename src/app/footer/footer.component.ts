@@ -56,6 +56,10 @@ export class FooterComponent {
       audioPlayer.pause();
       this.audioControlIcon = faPlayCircle;
     }
+
+    audioPlayer.onended = () => {
+      this.audioControlIcon = faPlayCircle;
+    }
   }
 
   private _setFooterText(currWidth: number) {
