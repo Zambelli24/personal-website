@@ -32,3 +32,11 @@
 img {
   margin: 0 8px;
 }
+
+.audio-button {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

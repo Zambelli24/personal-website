@@ -1,5 +1,12 @@
-<a class="footer-item" href="https://angular.io/" target="_blank" rel="noopener noreferrer">
-  <app-icon [icon]="faAngular" tooltip="Built with love using Angular"></app-icon>
-</a>
-<span>&#169; 2023  Nick Zambelli</span>
+
+<div class="footer-item">
+  <a href="https://angular.io/" target="_blank" rel="noopener noreferrer">
+    <app-icon [icon]="faAngular" tooltip="Built with love using Angular"></app-icon>
+  </a>
+  
+  <audio #audio src="assets/audio/remember-the-name.mp3"></audio>
+  <app-icon class="audio-button" [icon]="audioControlIcon" (click)="toggleAudio(audio)"></app-icon>
+</div>
+
+<span>&#169; {{ copyRightText }}</span>
 <app-connect></app-connect>

@@ -14,24 +14,24 @@ import { Subscription } from 'rxjs';
   ]
 })
 export class HeaderComponent implements OnDestroy {
-  @HostBinding('class') boxShadow = 'no-shadow'; 
-  hideBoxShadow = false;
+  @HostBinding('class') boxShadow = 'no-shadow';
 
-  routerSub: Subscription;
+  private _hideBoxShadow = false;
+  private _routerSub: Subscription;
 
   constructor(
     protected router: Router,
   ) {
-    this.routerSub = this.router.events.subscribe((event) => {
+    this._routerSub = this.router.events.subscribe((event) => {
       if (event.type === EventType.NavigationEnd) {
         const noShadowPages = ['/about', '/'];
-        this.hideBoxShadow =  noShadowPages.includes(event.urlAfterRedirects);
-        this.boxShadow = this.hideBoxShadow ? 'no-shadow' : '';
+        this._hideBoxShadow =  noShadowPages.includes(event.urlAfterRedirects);
+        this.boxShadow = this._hideBoxShadow ? 'no-shadow' : '';
       }
     });
   }
 
   ngOnDestroy() {
-    this.routerSub.unsubscribe();
+    this._routerSub.unsubscribe();
   }
 }
