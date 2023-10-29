@@ -47,53 +47,53 @@
 <h2>Let's build something beautiful together. I relish the opportunity to work with you to help turn your vision into a reality. Nothing is more rewarding than solving a complex problem and delivering a solution you'll love.</h2>
 
 <h1 class="section-header">Education</h1>
-<div *ngFor="let edu of education" class="edu-item">
-  <div class="edu-header">
-    <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
-    
-    <div class="photos">
-      <div *ngIf="edu.photos.length > 0">
-        <img *ngFor="let photo of edu.photos; index as i"
-             src="{{ photo }}"
-             alt="{{ edu.key + '-img-' + i }}" />
+<div class="education">
+  <div *ngFor="let edu of education" class="edu-item">
+    <div class="edu-header">
+      <span>{{ edu.startDate }} - {{ edu.endDate }}</span>
+      
+      <div class="photos">
+        <div *ngIf="edu.photos.length > 0">
+          <img *ngFor="let photo of edu.photos; index as i"
+               src="{{ photo }}"
+               alt="{{ edu.key + '-img-' + i }}" />
+        </div>
       </div>
-    </div>
-
-    <div class="details">
-      <h1>{{ edu.name }}</h1>
-      <img src="{{ edu.logo }}" alt="{{ edu.name }}" title="{{ edu.name }}" />
-      <h4>{{ edu.location }}</h4>
-    </div>
-
-  </div>
-
-  <div class="edu-details">
-    <div class="edu-section">
-      <h3>Academic Achievements</h3>
-      <ul>
-        <li *ngFor="let ach of edu.achievements">{{ ach }}</li>
-      </ul>
+  
+      <div class="details">
+        <h1>{{ edu.name }}</h1>
+        <img src="{{ edu.logo }}" alt="{{ edu.name }}" title="{{ edu.name }}" />
+        <h4>{{ edu.location }}</h4>
+      </div>
+  
     </div>
   
-    <div class="edu-section" *ngFor="let sport of edu.athletics">
-      <h3>{{ sport.name }}</h3>
-      <h5>{{ sport.years }}</h5>
-      <h5>{{ sport.positions }}</h5>
-  
-      <ul>
-        <li *ngFor="let ach of sport.achievements">{{ ach }}</li>
-      </ul>
-    </div>
-  
-    <ng-container *ngIf="edu.extraCirriculars.length">
-      <div class="edu-section" *ngFor="let extra of edu.extraCirriculars">
-        <h3>{{ extra.description }}</h3>
+    <div class="edu-details">
+      <div class="edu-section">
+        <h3>Academic Achievements</h3>
         <ul>
-          <li *ngFor="let detail of extra.details">{{ detail }}</li>
+          <li *ngFor="let ach of edu.achievements">{{ ach }}</li>
         </ul>
       </div>
-    </ng-container>
+    
+      <div class="edu-section" *ngFor="let sport of edu.athletics">
+        <h3>{{ sport.name }}</h3>
+        <h5>{{ sport.years }}</h5>
+        <h5>{{ sport.positions }}</h5>
+    
+        <ul>
+          <li *ngFor="let ach of sport.achievements">{{ ach }}</li>
+        </ul>
+      </div>
+    
+      <ng-container *ngIf="edu.extraCirriculars.length">
+        <div class="edu-section" *ngFor="let extra of edu.extraCirriculars">
+          <h3>{{ extra.description }}</h3>
+          <ul>
+            <li *ngFor="let detail of extra.details">{{ detail }}</li>
+          </ul>
+        </div>
+      </ng-container>
+    </div>   
   </div>
-
-   
 </div>

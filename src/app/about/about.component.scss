@@ -28,7 +28,7 @@
   div {
     align-items: center;
     display: flex;
-    padding: 25px 0;
+    padding: 25px 15px;
 
     &:first-of-type {
       padding-top: 0;
@@ -76,7 +76,7 @@
 .pillars {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  padding-top: 20px;
+  padding: 20px 15px;
 
   .site-pillar {
     align-items: center;
@@ -109,6 +109,14 @@
   @media screen and (max-width: 600px) {
     grid-template-columns: 100%
   }
+}
+
+h2 {
+  padding: 0 15px;
+}
+
+.education {
+  padding: 0 15px;
 }
 
 .edu-item {
