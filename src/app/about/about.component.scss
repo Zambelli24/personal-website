@@ -115,6 +115,67 @@ h2 {
   padding: 0 15px;
 }
 
+.endorsements {
+  padding: 30px 15px;
+  background-color: var(--secondary-color);
+
+  app-icon {
+    cursor: pointer;
+  }
+
+  .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      color: var(--secondary-text-color);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  .tick-marks {
+    display: flex;
+    justify-content: center;
+
+    app-icon {
+      opacity: 0.5;
+
+      &.active, &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  
+  p {
+    color: var(--secondary-text-color);
+    font-size: 24px;
+    font-style: italic;
+    margin: 0;
+    padding: 25px;
+
+    @media screen and (max-width: 600px) {
+      padding: 10px;
+    }
+  }
+  
+  .details {
+    h4 {
+      color: var(--secondary-text-color);
+      margin-bottom: 0;
+      text-align: right;
+    }
+
+    h5 {
+      color: var(--secondary-text-color);
+      margin: 0;
+      text-align: right;
+    }
+  }
+}
+
 .education {
   padding: 0 15px;
 }

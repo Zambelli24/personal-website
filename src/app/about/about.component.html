@@ -46,6 +46,31 @@
 
 <h2>Let's build something beautiful together. I relish the opportunity to work with you to help turn your vision into a reality. Nothing is more rewarding than solving a complex problem and delivering a solution you'll love.</h2>
 
+<div class="endorsements">
+  <div class="header">
+    <app-icon [icon]="previousIcon" [inverted]="true" (click)="changeEndorsement('previous')"></app-icon>
+    <h2>Endorsements</h2>
+    <app-icon [icon]="nextIcon" [inverted]="true" (click)="changeEndorsement('next')"></app-icon>
+  </div>
+
+  <div class="tick-marks">
+    <app-icon *ngFor="let endorsement of endorsements"
+              [ngClass]="{ active: endorsement.comment === currEndorsement.comment }"
+              [icon]="selectIcon"
+              [inverted]="true"
+              (click)="changeEndorsement('select', endorsement)">
+    </app-icon>
+  </div>
+
+  <div>
+    <p>"{{ currEndorsement.comment }}"</p>
+    <div class="details">
+      <h4>- {{ currEndorsement.name }} ({{ currEndorsement.location }})</h4>
+      <h5>{{ currEndorsement.relationship }} {{ currEndorsement.type === 'project' ? 'on' : 'at' }} {{ currEndorsement.connection }}</h5>
+    </div>
+  </div>
+</div>
+
 <h1 class="section-header">Education</h1>
 <div class="education">
   <div *ngFor="let edu of education" class="edu-item">
