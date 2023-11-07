@@ -33,11 +33,11 @@
     &:first-of-type {
       padding-top: 0;
     }
-    
+
     &:last-of-type {
       padding-bottom: 0;
     }
-    
+
     h3 {
       font-weight: normal;
       margin: 0;
@@ -77,10 +77,12 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   padding: 20px 15px;
+  background-color: var(--secondary-color);
+
 
   .site-pillar {
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--app-background-color);
     border-radius: var(--default-border-radius);
     box-sizing: border-box;
     display: flex;
@@ -93,7 +95,7 @@
     }
 
     h3, span {
-      color: var(--secondary-text-color) !important;
+      // color: var(--secondary-text-color) !important;
       text-align: center;
     }
 
@@ -111,8 +113,8 @@
   }
 }
 
-h2 {
-  padding: 0 15px;
+.supporting-details {
+  padding: 25px 15px;
 }
 
 .endorsements {

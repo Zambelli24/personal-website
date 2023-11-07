@@ -23,6 +23,7 @@ export class StyleComponent {
   fontStyle: string;
   colorSelector = new FormControl();
   colorPalette: string;
+  showColorFade: boolean;
   useSharpCorners: boolean;
 
   constructor(
@@ -34,6 +35,7 @@ export class StyleComponent {
     this.colorSelector.setValue(this.themeService.getColorPalette());
     this.colorSelector.valueChanges.subscribe((value) => this.changeTheme(value));
     
+    this.showColorFade = this.themeService.getColorFadeState();
     this.useSharpCorners = this.themeService.getSharpCornersState();
   }
 
@@ -47,5 +49,9 @@ export class StyleComponent {
 
   changeCorners = () => {
     this.themeService.changeCorners();
+  }
+
+  changeColorFade = () => {
+    this.themeService.changeColorFade();
   }
 }

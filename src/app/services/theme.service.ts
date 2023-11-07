@@ -7,12 +7,15 @@ export class ThemeService {
   private _fontStyle: string;
   private _colorPalette: string;
   private _useSharpCorners = false;
+  private _showColorFade = false;
 
   constructor() {
     this._colorPalette = localStorage.getItem('colorPalette') || '';
     if (this._colorPalette) {
       document.body.classList.add(this._colorPalette);
     }
+
+    this._showColorFade = localStorage.getItem('colorFade') === 'true';
 
     this._useSharpCorners = localStorage.getItem('corners') === 'true';
     if (this._useSharpCorners) {
@@ -26,8 +29,9 @@ export class ThemeService {
   }
 
   public getColorPalette = () => this._colorPalette;  
-  public getSharpCornersState = () => this._useSharpCorners;
   public getFontStyle = () => this._fontStyle;
+  public getSharpCornersState = () => this._useSharpCorners;
+  public getColorFadeState = () => this._showColorFade;
 
   public changeTheme = (colorPalette: string) => {
     this._colorPalette && document.body.classList.remove(this._colorPalette);
@@ -47,5 +51,10 @@ export class ThemeService {
     this._fontStyle = fontStyle;
     this._fontStyle && document.body.classList.add(this._fontStyle);
     localStorage.setItem('fontStyle', this._fontStyle);
+  }
+
+  public changeColorFade = () => {
+    this._showColorFade = !this._showColorFade;
+    localStorage.setItem('colorFade', (this._showColorFade).toString());
   }
 }

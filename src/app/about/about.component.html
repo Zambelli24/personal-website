@@ -4,10 +4,16 @@
     <h3>I am a former collegiate football player, a 4.0 student and someone who gets the job done. I am willing to do whatever it takes to achieve my goals.You'll find that I am a man who loves a challenge. A man who is constantly growing and striving to be better than the day before.</h3>
     <img src="assets/personal-photos/campbell-summit.JPG" alt="campbell-summit">
   </div>
+
+  <app-separator></app-separator>
+  
   <div class="inverted-background">
     <img src="assets/personal-photos/beach.jpeg" alt="beach"/>
     <h3>Patience, perseverance, and consistency are just a few of the values I live by. I am a student of life, humbled through experience and eager to learn. I am a problem solver, life liver, and go getter. In working with me, you will find that I am driven, well organized, and extremely effective. I have learned a variety of skills from many disparate experiences.</h3>
   </div>
+  
+  <app-separator [inverted]="true"></app-separator>
+  
   <div>
     <h3>I love to exercise and compete. I give everything I have in everything I do. I am passionate about my health. I enjoy golfing, hiking, skiing, lifting and running. I am a reader, painter and a student of life. We all have finite time on this Earth, so let's make the most of it. Connect with me today so we can pull each other forward!</h3>
     <img src="assets/personal-photos/golf.jpeg" alt="golf"/>
@@ -18,33 +24,40 @@
 
 <div class="pillars">
   <div class="site-pillar">
-    <app-icon [icon]="pillarOneIcon" [inverted]="true"></app-icon>
+    <app-icon [icon]="pillarOneIcon"></app-icon>
     <h3 class="pillar-name">Efficient</h3>
     <span>Inefficiency breeds latency and no one will use a slow site</span>
   </div>
   
   <div class="site-pillar">
-    <app-icon [icon]="pillarTwoIcon" [inverted]="true"></app-icon>
+    <app-icon [icon]="pillarTwoIcon"></app-icon>
     <h3 class="pillar-name">Responsive</h3>
     <span>Reach as many users as possible with dynamic layouts fit for all devices</span>
   </div>
   
   <div class="site-pillar">
-    <app-icon [icon]="pillarThreeIcon" [inverted]="true"></app-icon>
+    <app-icon [icon]="pillarThreeIcon"></app-icon>
     <h3 class="pillar-name">Flexible</h3>
     <span>Change happens daily and my websites are always ready to adapt to your needs</span>
   </div>
   
   <div class="site-pillar">
-      <app-icon [icon]="pillarFourIcon" [inverted]="true"></app-icon>
+      <app-icon [icon]="pillarFourIcon"></app-icon>
     <h3 class="pillar-name">Intuitive</h3>
     <span>User friendly to the max, no tour or explanation necessary</span>
   </div>
 </div>
 
-<h2>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/style">styles</a> to make your experience unique.</h2>
+<app-separator [inverted]="true"></app-separator>
 
-<h2>Let's build something beautiful together. I relish the opportunity to work with you to help turn your vision into a reality. Nothing is more rewarding than solving a complex problem and delivering a solution you'll love.</h2>
+<div class="supporting-details">
+  <h2>This site was written in Angular from scratch using advanced techniques. Change the <a href="/personal-website/style">styles</a> to make your experience unique.</h2>
+  
+  <h2>Let's build something beautiful together. I relish the opportunity to work with you to help turn your vision into a reality. Nothing is more rewarding than solving a complex problem and delivering a solution you'll love.</h2>
+</div>
+
+
+<app-separator></app-separator>
 
 <div class="endorsements">
   <div class="header">
@@ -70,6 +83,8 @@
     </div>
   </div>
 </div>
+
+<app-separator [inverted]="true"></app-separator>
 
 <h1 class="section-header">Education</h1>
 <div class="education">

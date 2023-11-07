@@ -8,6 +8,7 @@ import { IconComponent } from '../shared/components/icon.component';
 import { faBuromobelexperte } from '@fortawesome/free-brands-svg-icons';
 import { IEndorsement } from './endorsements/endorsement.interface';
 import { endorsements } from './endorsements/endorsements';
+import { SeparatorComponent } from '../shared/components/separator.component';
 
 @Component({
   standalone: true,
@@ -18,6 +19,7 @@ import { endorsements } from './endorsements/endorsements';
     CarouselModule,
     CommonModule,
     IconComponent,
+    SeparatorComponent
   ]
 })
 export class AboutComponent {

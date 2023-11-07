@@ -1,0 +1,8 @@
+.separator {
+  background-image: linear-gradient(var(--app-background-color), 85%, var(--secondary-color));
+  height: 25px;
+
+  &.inverted {
+    background-image: linear-gradient(to top, var(--app-background-color), 85%, var(--secondary-color));
+  }
+}
