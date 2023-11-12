@@ -25,6 +25,8 @@ export class FooterComponent {
   private _year = new Date().getFullYear().toString();
 
   constructor() {
+    this._setFooterText(document.documentElement.clientWidth);
+
     window.addEventListener('scroll', () => {
       const currScrollTop = document.documentElement.scrollTop;
       const isScrollingDown = currScrollTop < this._lastScrollTop;
@@ -37,10 +39,6 @@ export class FooterComponent {
       }
 
       this._lastScrollTop = currScrollTop;
-    });
-
-    window.addEventListener('load', () => {
-      this._setFooterText(document.documentElement.clientWidth);
     });
 
     window.addEventListener('resize', () => {
