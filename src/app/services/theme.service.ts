@@ -4,10 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeService {
-  private _fontStyle: string;
   private _colorPalette: string;
-  private _useSharpCorners = false;
+  private _fontSize: string;
+  private _fontStyle: string;
   private _showColorFade = false;
+  private _useSharpCorners = false;
 
   constructor() {
     this._colorPalette = localStorage.getItem('colorPalette') || '';
@@ -22,6 +23,11 @@ export class ThemeService {
       document.body.classList.add('corners');
     }
 
+    this._fontSize = localStorage.getItem('fontSize') || '';
+    if (this._fontSize) {
+      document.body.classList.add(this._fontSize);
+    }
+  
     this._fontStyle = localStorage.getItem('fontStyle') || '';
     if (this._fontStyle) {
       document.body.classList.add(this._fontStyle);
@@ -29,6 +35,7 @@ export class ThemeService {
   }
 
   public getColorPalette = () => this._colorPalette;  
+  public getFontSize = () => this._fontSize;
   public getFontStyle = () => this._fontStyle;
   public getSharpCornersState = () => this._useSharpCorners;
   public getColorFadeState = () => this._showColorFade;
@@ -44,6 +51,13 @@ export class ThemeService {
     document.body.classList.toggle('corners');
     this._useSharpCorners = !this._useSharpCorners;
     localStorage.setItem('corners', (this._useSharpCorners).toString());
+  }
+
+  public changeFontSize = (fontSize: string) => {
+    this._fontSize && document.body.classList.remove(this._fontSize);
+    this._fontSize = fontSize;
+    this._fontSize && document.body.classList.add(this._fontSize);
+    localStorage.setItem('fontSize', this._fontSize);
   }
 
   public changeFontStyle = (fontStyle: string) => {

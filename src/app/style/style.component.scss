@@ -17,11 +17,10 @@ h3 {
     grid-template-columns: 35% 65%;
   }
 
-  span {
+  h4 {
     color: var(--text-color);
-    font-size: 16px;
     display: flex;
-    align-items: center;
+    align-items: center; 
   }
 
   .control {
@@ -34,7 +33,7 @@ h3 {
       box-shadow: 1px 1px 3px var(--shadow-color);
       box-sizing: border-box;
       padding: 5px 10px;
-      width: 150px;
+      width: 180px;
     }
   }
 }

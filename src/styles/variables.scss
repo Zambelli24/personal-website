@@ -1,3 +1,4 @@
+// color schemes
 body {
   --primary-color: #b3cee5;
   --secondary-color: #405580;
@@ -17,6 +18,12 @@ body {
   --font-family: 'Optima', 'sans-serif';
 
   --default-border-radius: 8px;
+
+  --regular-text: 14px;
+  --large-text: 16px;
+  --subheader-text: 20px;
+  --header-text: 24px;
+  --lg-header-text: 32px;
 }
 
 body.dark {
@@ -49,6 +56,7 @@ body.high-contrast {
   --shadow-color: #bbb;
 }
 
+// font families
 body.cursive {
   --font-family: 'Bradley Hand', 'cursive';
 }
@@ -65,6 +73,37 @@ body.marker {
   --font-family: 'Marker Felt', 'sans-serif';
 }
 
+// font sizes
+body.xs-text {
+  --regular-text: 8px;
+  --large-text: 10px;
+  --subheader-text: 14px;
+  --header-text: 16px;
+  --lg-header-text: 20px;
+}
+body.small-text {
+  --regular-text: 11px;
+  --large-text: 13px;
+  --subheader-text: 17px;
+  --header-text: 20px;
+  --lg-header-text: 26px;
+}
+body.large-text {
+  --regular-text: 17px;
+  --large-text: 19px;
+  --subheader-text: 23px;
+  --header-text: 28px;
+  --lg-header-text: 38px;
+}
+body.xl-text {
+  --regular-text: 20px;
+  --large-text: 22px;
+  --subheader-text: 26px;
+  --header-text: 32px;
+  --lg-header-text: 44px;
+}
+
+// miscellaneous
 body.corners {
   --default-border-radius: 0px;
 }

@@ -1,7 +1,7 @@
 <h3>What better way to show off the modularity and configurability that I strive for in all my work? Change these settings however you like to make your experience on my site unique. Imagine what can be done with your vision!</h3>
 
 <div class="setting-options">
-  <span>Color Fade</span>
+  <h4>Color Fade</h4>
   <div class="control">
     <mat-slide-toggle
       [checked]="showColorFade"
@@ -9,7 +9,7 @@
     ></mat-slide-toggle>
   </div>
 
-  <span>Sharp Corners</span>
+  <h4>Sharp Corners</h4>
   <div class="control">
     <mat-slide-toggle
       [checked]="useSharpCorners"
@@ -17,7 +17,7 @@
     ></mat-slide-toggle>
   </div>
 
-  <span>Color Palette</span>
+  <h4>Color Palette</h4>
   <div class="control">
     <mat-select [formControl]="colorSelector">
       <mat-option value="">Default</mat-option>
@@ -26,7 +26,18 @@
     </mat-select>
   </div>
 
-  <span>Font Style</span>
+  <h4>Font Size</h4>
+  <div class="control">
+    <mat-select [formControl]="fontSizeSelector">
+      <mat-option value="xs-text">Extra Small</mat-option>
+      <mat-option value="small-text">Small</mat-option>
+      <mat-option value="">Medium (Default)</mat-option>
+      <mat-option value="large-text">Large</mat-option>
+      <mat-option value="xl-text">Extra Large</mat-option>
+    </mat-select>
+  </div>
+
+  <h4>Font Style</h4>
   <div class="control">
     <mat-select [formControl]="fontSelector">
       <mat-option value="">Default</mat-option>

@@ -19,10 +19,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   ],
 })
 export class StyleComponent {
-  fontSelector = new FormControl();
-  fontStyle: string;
   colorSelector = new FormControl();
-  colorPalette: string;
+  fontSelector = new FormControl();
+  fontSizeSelector = new FormControl();
+
   showColorFade: boolean;
   useSharpCorners: boolean;
 
@@ -32,6 +32,9 @@ export class StyleComponent {
     this.fontSelector.setValue(this.themeService.getFontStyle());
     this.fontSelector.valueChanges.subscribe((value) => this.changeFont(value));
     
+    this.fontSizeSelector.setValue(this.themeService.getFontSize());
+    this.fontSizeSelector.valueChanges.subscribe((value) => this.changeFontSize(value));
+
     this.colorSelector.setValue(this.themeService.getColorPalette());
     this.colorSelector.valueChanges.subscribe((value) => this.changeTheme(value));
     
@@ -41,6 +44,10 @@ export class StyleComponent {
 
   changeFont = (font: string) => {
     this.themeService.changeFontStyle(font);
+  }
+
+  changeFontSize = (fontSize: string) => {
+    this.themeService.changeFontSize(fontSize);
   }
   
   changeTheme = (colorPalette: string) => {
