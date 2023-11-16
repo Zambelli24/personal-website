@@ -27,7 +27,7 @@
       background-color: var(--primary-color);
       border-left: 1px solid #FFF;
       border-bottom: 1px solid #FFF;
-      padding: 15px;
+      padding: var(--sm-spacing);
 
       &:first-of-type {
         border-top: 1px solid #FFF;

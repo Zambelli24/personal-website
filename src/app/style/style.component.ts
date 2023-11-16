@@ -22,6 +22,7 @@ export class StyleComponent {
   colorSelector = new FormControl();
   fontSelector = new FormControl();
   fontSizeSelector = new FormControl();
+  spacingSizeSelector = new FormControl();
 
   showColorFade: boolean;
   useSharpCorners: boolean;
@@ -40,6 +41,9 @@ export class StyleComponent {
     
     this.showColorFade = this.themeService.getColorFadeState();
     this.useSharpCorners = this.themeService.getSharpCornersState();
+    
+    this.spacingSizeSelector.setValue(this.themeService.getSpacingSize());
+    this.spacingSizeSelector.valueChanges.subscribe((value) => this.changeSpacingSize(value));
   }
 
   changeFont = (font: string) => {
@@ -48,6 +52,10 @@ export class StyleComponent {
 
   changeFontSize = (fontSize: string) => {
     this.themeService.changeFontSize(fontSize);
+  }
+
+  changeSpacingSize = (spacingSize: string) => {
+    this.themeService.changeSpacingSize(spacingSize);
   }
   
   changeTheme = (colorPalette: string) => {

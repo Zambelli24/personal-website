@@ -11,24 +11,24 @@
   border-top: 1px solid #fff;
   box-shadow: 0px 2px 2px var(--shadow-color);
   margin: 0;
-  padding: 5px 0;
+  padding: var(--sm-spacing) 0;
   position: sticky;
   text-align: center;
   top: 50px;
   z-index: 2000;
 
   &:not(:first-of-type) {
-    margin-top: 125px;
+    margin-top: var(--xl-spacing);
   }
 }
 
 .about-me {
-  padding: 20px 0;
+  padding: var(--md-spacing) 0;
 
   div {
     align-items: center;
     display: flex;
-    padding: 25px 15px;
+    padding: var(--lg-spacing) var(--md-spacing);
 
     &:first-of-type {
       padding-top: 0;
@@ -62,7 +62,7 @@
 
       h3 {
         order: 1;
-        padding-bottom: 10px;
+        padding-bottom: var(--sm-spacing);
         text-align: center;
       }
 
@@ -76,7 +76,7 @@
 .pillars {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  padding: 20px 15px;
+  padding: var(--lg-spacing) var(--md-spacing);
   background-color: var(--secondary-color);
 
 
@@ -87,8 +87,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 15px;
+    margin: var(--sm-spacing);
+    padding: var(--md-spacing);
 
     h2 {
       text-align: center;
@@ -101,6 +101,7 @@
 
     app-icon {
       font-size: var(--lg-header-text);
+      padding: 0;
     }
   }
 
@@ -114,11 +115,11 @@
 }
 
 .supporting-details {
-  padding: 25px 15px;
+  padding: var(--lg-spacing) var(--md-spacing);
 }
 
 .endorsements {
-  padding: 30px 15px;
+  padding: var(--lg-spacing) var(--md-spacing);
   background-color: var(--secondary-color);
 
   app-icon {
@@ -155,10 +156,10 @@
     color: var(--secondary-text-color);
     font-style: italic;
     margin: 0;
-    padding: 25px;
+    padding: var(--lg-spacing);
 
     @media screen and (max-width: 600px) {
-      padding: 10px;
+      padding: var(--sm-spacing);
     }
   }
   
@@ -178,7 +179,8 @@
 }
 
 .education {
-  padding: 0 15px;
+  padding: var(--md-spacing);
+  padding-bottom: 0;
 }
 
 .edu-item {
@@ -197,7 +199,7 @@
     border-top-left-radius: var(--default-border-radius);
     border-top-right-radius: var(--default-border-radius);
     color: var(--secondary-text-color);
-    padding: 10px;
+    padding: var(--sm-spacing);
     text-align: center;
     width: 100%;
   }
@@ -207,7 +209,7 @@
     display: flex;
     justify-content: space-between;
     height: 170px;
-    padding: 10px 0;
+    padding: var(--sm-spacing) 0;
     position: relative;
     top: 0;
     width: 100%;
@@ -238,14 +240,14 @@
     width: 100%;
 
     h1 {
-      margin-bottom: 5px;
-      margin-top: 20px;
+      margin-bottom: var(--xs-spacing);
+      margin-top: var(--md-spacing);
       text-align: center;
     }
 
     h2 {
-      margin-bottom: 20px;
-      margin-top: 5px;
+      margin-bottom: var(--md-spacing);
+      margin-top: var(--xs-spacing);
       text-align: center;
     }
   }
@@ -264,7 +266,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: var(--md-spacing);
   width: 375px;
 
   &:nth-of-type(odd) {
@@ -285,7 +287,7 @@
 
   h3, h5 {
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: var(--sm-spacing);
     text-align: center;
   }
 }

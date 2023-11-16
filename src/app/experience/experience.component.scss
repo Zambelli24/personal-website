@@ -21,20 +21,20 @@
     border-top-left-radius: var(--default-border-radius);
     border-top-right-radius: var(--default-border-radius);
     color: var(--secondary-text-color);
-    padding: 10px;
+    padding: var(--sm-spacing);
     text-align: center;
     width: 100%;
   }
 
   h1 {
-    margin-bottom: 5px;
-    margin-top: 20px;
+    margin-bottom: var(--xs-spacing);
+    margin-top: var(--md-spacing);
     text-align: center;
   }
 
   h2 {
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: var(--md-spacing);
+    margin-top: var(--xs-spacing);
     text-align: center;
   }
 }
@@ -44,7 +44,7 @@
   grid-template-columns: 50% 50%;
 
   div {
-    padding: 0 5px;
+    padding: 0 var(--xs-spacing);
   }
 
   h3 {
@@ -61,7 +61,7 @@
 }
 
 h3 {
-  margin-bottom: 5px;
+  margin-bottom: var(--xs-spacing);
 }
 
 .technologies {

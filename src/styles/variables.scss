@@ -24,6 +24,12 @@ body {
   --subheader-text: 20px;
   --header-text: 24px;
   --lg-header-text: 32px;
+
+  --xs-spacing: 5px;
+  --sm-spacing: 10px;
+  --md-spacing: 20px;
+  --lg-spacing: 40px;
+  --xl-spacing: 80px;
 }
 
 body.dark {
@@ -101,6 +107,22 @@ body.xl-text {
   --subheader-text: 26px;
   --header-text: 32px;
   --lg-header-text: 44px;
+}
+
+// spacing sizes
+body.small-spacing {
+  --xs-spacing: 2.5px;
+  --sm-spacing: 5px;
+  --md-spacing: 10px;
+  --lg-spacing: 20px;
+  --xl-spacing: 40px;
+}
+body.large-spacing {
+  --xs-spacing: 10px;
+  --sm-spacing: 20px;
+  --md-spacing: 40px;
+  --lg-spacing: 80px;
+  --xl-spacing: 160px;
 }
 
 // miscellaneous

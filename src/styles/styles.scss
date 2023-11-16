@@ -42,11 +42,11 @@ button {
 }
 
 ul {
-  padding-left: 15px;
+  padding-left: var(--md-spacing);
 
   li {
     list-style: circle;
-    padding-bottom: 5px;
+    padding-bottom: var(--xs-spacing);
   }
 }
 

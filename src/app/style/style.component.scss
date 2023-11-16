@@ -5,13 +5,13 @@
 }
 
 h3 {
-  margin-top: 30px;
+  margin-top: var(--lg-spacing);
 }
 
 .setting-options {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 20px 0;
+  padding: var(--md-spacing) 0;
   
   @media screen and (min-width: 750px) {
     grid-template-columns: 35% 65%;
@@ -26,13 +26,13 @@ h3 {
   .control {
     align-items: center;
     display: flex;
-    padding: 20px 0;
+    padding: var(--md-spacing) 0;
 
     mat-select {
       border-radius: var(--default-border-radius);
       box-shadow: 1px 1px 3px var(--shadow-color);
       box-sizing: border-box;
-      padding: 5px 10px;
+      padding: var(--xs-spacing) var(--sm-spacing);
       width: 180px;
     }
   }

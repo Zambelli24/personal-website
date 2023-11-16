@@ -8,7 +8,7 @@
   height: var(--banner-height);
   justify-content: space-between;
   left: 0;
-  padding-left: 10px;
+  padding-left: var(--sm-spacing);
   position: fixed;
   top: 0;
   width: 100%;
@@ -32,7 +32,7 @@
     img {
       border-radius: 50%;
       height: 35px;
-      margin-right: 5px;
+      margin-right: var(--xs-spacing);
     }
   }
 }

@@ -8,6 +8,7 @@ export class ThemeService {
   private _fontSize: string;
   private _fontStyle: string;
   private _showColorFade = false;
+  private _spacingSize: string;
   private _useSharpCorners = false;
 
   constructor() {
@@ -32,12 +33,18 @@ export class ThemeService {
     if (this._fontStyle) {
       document.body.classList.add(this._fontStyle);
     }
+
+    this._spacingSize = localStorage.getItem('spacingSize') || '';
+    if (this._spacingSize) {
+      document.body.classList.add(this._spacingSize);
+    }
   }
 
   public getColorPalette = () => this._colorPalette;  
   public getFontSize = () => this._fontSize;
   public getFontStyle = () => this._fontStyle;
   public getSharpCornersState = () => this._useSharpCorners;
+  public getSpacingSize = () => this._spacingSize;
   public getColorFadeState = () => this._showColorFade;
 
   public changeTheme = (colorPalette: string) => {
@@ -51,6 +58,11 @@ export class ThemeService {
     document.body.classList.toggle('corners');
     this._useSharpCorners = !this._useSharpCorners;
     localStorage.setItem('corners', (this._useSharpCorners).toString());
+  }
+  
+  public changeColorFade = () => {
+    this._showColorFade = !this._showColorFade;
+    localStorage.setItem('colorFade', (this._showColorFade).toString());
   }
 
   public changeFontSize = (fontSize: string) => {
@@ -67,8 +79,10 @@ export class ThemeService {
     localStorage.setItem('fontStyle', this._fontStyle);
   }
 
-  public changeColorFade = () => {
-    this._showColorFade = !this._showColorFade;
-    localStorage.setItem('colorFade', (this._showColorFade).toString());
+  public changeSpacingSize = (spacing: string) => {
+    this._spacingSize && document.body.classList.remove(this._spacingSize);
+    this._spacingSize = spacing;
+    this._spacingSize && document.body.classList.add(this._spacingSize);
+    localStorage.setItem('spacingSize', this._spacingSize);
   }
 }
