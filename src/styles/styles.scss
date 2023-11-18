@@ -17,24 +17,24 @@ span, p, ul, ol, h1, h2, h3, h4, h5, h6, a {
 }
 
 span, p, ul, ol {
-  font-size: var(--regular-text);
+  font-size: var(--xs-text);
 }
 
 h4, h5, h6 {
-  font-size: var(--large-text);
+  font-size: var(--sm-text);
   font-weight: normal;
 }
 
 h3 {
-  font-size: var(--subheader-text);
+  font-size: var(--md-text);
 }
 
 h2 {
-  font-size: var(--header-text);
+  font-size: var(--lg-text);
 }
 
 h1 {
-  font-size: var(--lg-header-text);
+  font-size: var(--xl-text);
 }
 
 button {
