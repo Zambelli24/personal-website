@@ -57,7 +57,7 @@ export const MoravianEdu: IEducation = {
   name: 'Moravian University',
   key: 'moravian',
   photos: [
-    'assets/personal-photos/football.JPG',
+    'assets/personal-photos/football.jpg',
   ],
   startDate: 'September 2015',
   endDate: 'May 2019',
