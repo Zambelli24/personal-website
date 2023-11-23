@@ -1,14 +1,16 @@
-<a *ngFor="let project of projects" class="portfolio-item" href="{{ project.link }}" target="_blank" rel="noopener">
+<div *ngFor="let project of projects" class="portfolio-item">
   <div class="project-header">
     <img id="{{ project.key }}-logo" src="{{ project.logo }}" alt="{{ project.name }}" />
-    <h1>{{ project.name }}</h1>
+    <h1><a href="{{ project.link }}" target="_blank" rel="noopener">{{ project.name }}</a></h1>
   </div>
 
   <ul class="project-images">
     <li *ngFor="let image of project.images; index as i">
-      <img src="{{ image }}"
-           alt="{{ project.name }}-image-{{ i }}"
-           title="{{ project.name }} Image {{ i }}" />
+      <a href="{{ project.link }}" target="_blank" rel="noopener">
+        <img src="{{ image }}"
+             alt="{{ project.name }}-image-{{ i }}"
+             title="{{ project.name }} Image {{ i }}" />
+      </a>
     </li>
   </ul>
 
@@ -32,4 +34,4 @@
       <app-icon class="tech-logo" [icon]="tech.icon" [tooltip]="tech.name" [inverted]="true"></app-icon>
     </ng-container>
   </div>
-</a>
+</div>

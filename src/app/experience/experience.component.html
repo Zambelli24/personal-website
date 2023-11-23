@@ -1,8 +1,8 @@
-<a *ngFor="let exp of experience" class="exp-item" href="{{ exp.link }}" target="_blank" rel="noopener">
+<div *ngFor="let exp of experience" class="exp-item">
   <div class="exp-header">
     <span>{{ exp.startDate }} - {{ exp.endDate }} {{ exp.type === 'intern' ? '(Internship)' : '' }}</span>
     <h1>{{ exp.title }}</h1>
-    <h2>{{ exp.company }}</h2>
+    <h2><a href="{{ exp.link }}" target="_blank" rel="noopener">{{ exp.company }}</a></h2>
   </div>
   
   <div class="exp-details">
@@ -24,4 +24,4 @@
       <app-icon class="tech-logo" [icon]="tech.icon" [tooltip]="tech.name" [inverted]="true"></app-icon>
     </ng-container>
   </div>
-</a>
+</div>

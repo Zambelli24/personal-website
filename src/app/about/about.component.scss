@@ -116,6 +116,12 @@
 
 .supporting-details {
   padding: var(--lg-spacing) var(--md-spacing);
+  text-align: center;
+
+  h2 {
+    margin: var(--md-spacing) 0;
+    padding: var(--md-spacing) 0;
+  }
 }
 
 .endorsements {

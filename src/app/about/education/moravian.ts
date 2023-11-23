@@ -13,11 +13,11 @@ export const MoravianEdu: IEducation = {
       name: 'Football',
       achievements: [
         'Team Captain for junior and senior seasons',
-        '4 year starter for the Moravian football team recording 200+ tackles and 8 interceptions',
         'Academic All-American 1st team (2017, 2018)',
         'Centennial Conference Scholar-Athlete of the Year (2017)',
         'Male Scholar Athlete of the Year for Moravian College (2018)',
         'William V. Campbell Trophy Semifinalist (2018)',
+        '4 year starter recording 218 tackles, 8 interceptions and 2 forced fumbles',
       ],
       positions: 'Safety & Outside Linebacker',
       years: 'Freshman, Sophomore, Junior, & Senior Years',
@@ -25,9 +25,9 @@ export const MoravianEdu: IEducation = {
   ],
   extraCirriculars: [
     {
-      description: 'Omicon Gamma Omega (OGO)',
+      description: 'Omicron Gamma Omega (OGO)',
       details: [
-        'Held Vice President position for 4 semesters',
+        'Served as Vice President for 4 semesters',
         'Helped organize and run events for the fraternity',
         'Held the Academic Chair position for 2 semesters',
         'Contributed to 10% increase in fraternity GPA',

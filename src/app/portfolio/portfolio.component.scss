@@ -5,7 +5,7 @@
 }
 
 .portfolio-item {
-  @include clickable-card;
+  @include card;
   padding-bottom: 0;
 }
 
@@ -39,7 +39,6 @@
 
   li {
     flex: auto;
-    cursor: pointer;
     position: relative;
     list-style-type: none;
     padding: 0;

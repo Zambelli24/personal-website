@@ -5,7 +5,7 @@
 }
 
 .exp-item {
-  @include clickable-card;
+  @include card;
   padding-bottom: 0;
   padding-top: 0;
 }
