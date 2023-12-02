@@ -1,0 +1,12 @@
+<a href="{{ project.link }}" target="_blank" rel="noopener">
+  <img id="{{ project.name }}-image-frame-{{ index }}"
+       class="frame"
+       src="{{ getFrameSource(project, image) }}"
+       alt="{{ project.name }}-image-{{ index }}-frame"
+       title="{{ project.name }} Image {{ index }} Frame" />
+  <img id="{{ project.name }}-image-content-{{ index }}"
+       class="content"
+       src="{{ image.source }}"
+       alt="{{ project.name }}-image-{{ index }}"
+       title="{{ project.name }} Image {{ index }}" />
+</a>

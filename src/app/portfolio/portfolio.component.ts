@@ -3,6 +3,7 @@ import { ProjectsService } from '../services/projects.service';
 import { IProject } from '../projects/project.interface';
 import { CommonModule } from '@angular/common';
 import { IconComponent } from '../shared/components/icon.component';
+import { DeviceFrameComponent } from '../shared/components/device-frame.component';
 
 @Component({
   standalone: true,
@@ -11,6 +12,7 @@ import { IconComponent } from '../shared/components/icon.component';
   styleUrls: ['./portfolio.component.scss'],
   imports: [
     CommonModule,
+    DeviceFrameComponent,
     IconComponent,
   ]
 })

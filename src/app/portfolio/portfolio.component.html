@@ -4,15 +4,11 @@
     <h1><a href="{{ project.link }}" target="_blank" rel="noopener">{{ project.name }}</a></h1>
   </div>
 
-  <ul class="project-images">
-    <li *ngFor="let image of project.images; index as i">
-      <a href="{{ project.link }}" target="_blank" rel="noopener">
-        <img src="{{ image }}"
-             alt="{{ project.name }}-image-{{ i }}"
-             title="{{ project.name }} Image {{ i }}" />
-      </a>
-    </li>
-  </ul>
+  <div class="project-images">
+    <ng-container *ngFor="let image of project.images; index as i">
+      <app-device-frame [project]="project" [image]="image" [index]="i"></app-device-frame>
+    </ng-container>
+  </div>
 
   <div class="project-details">
     <div>

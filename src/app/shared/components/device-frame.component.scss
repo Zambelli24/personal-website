@@ -1,0 +1,38 @@
+:host {
+  padding: var(--md-spacing);
+}
+
+.frame {
+  position: absolute;
+
+  &.mobile {
+    width: 100px;
+  }
+
+  &.tablet {
+    width: 200px;
+  }
+
+  &.laptop {
+    width: 300px;
+  }
+}
+
+.content {
+  margin: 0;
+
+  &.mobile {
+    width: 89px;
+    padding: 5px 6px;
+  }
+
+  &.tablet {
+    width: 180px;
+    padding: 10px;
+  }
+
+  &.laptop {
+    width: 222px;
+    padding: 16px 40px;
+  }
+}
