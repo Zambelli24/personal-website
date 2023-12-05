@@ -121,6 +121,15 @@
   h2 {
     margin: var(--md-spacing) 0;
     padding: var(--md-spacing) 0;
+
+    &:nth-of-type(2) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  h3 {
+    font-weight: normal;
   }
 }
 
