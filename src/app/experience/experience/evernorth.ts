@@ -3,7 +3,7 @@ import { IExperience } from './experience.interface';
 
 export const EvernorthExp: IExperience = {
   company: 'Evernorth Health Services',
-  description: 'I am a Senior Full Stack Engineer contracted through Solomon Page. I am responsibile for an internal solution helping our custom service teams assist customers in optimizing their healthcare and benefits plans. Within 6 months I have elevated my responsibilities to leading numerous re-architecturing efforts while gaining the trust of my team. I am frequently relied upon for critical fixes and ensuring code quality.',
+  description: 'I am responsibile for an internal solution helping our customer service teams assist customers in optimizing their healthcare and benefits plans. Within 6 months I have elevated my responsibilities to leading numerous re-architecting efforts while gaining the trust of my team. I am frequently relied upon for critical fixes and ensuring code quality.',
   endDate: 'Present',
   startDate: 'June 2023',
   key: 'evernorth',
