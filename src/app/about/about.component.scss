@@ -44,8 +44,9 @@
     }
 
     img {
-      object-fit: cover;
+      border-radius: var(--default-border-radius);
       height: 175px;
+      object-fit: cover;
     }
 
     &.inverted-background {
@@ -117,6 +118,20 @@
 .supporting-details {
   padding: var(--lg-spacing) var(--md-spacing);
   text-align: center;
+
+  .choose-style {
+    color: var(--tertiary-color);
+    font-size: calc(var(--xl-text) * 1.5);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--shadow-color);
+
+    a {
+      font-style: italic;
+    }
+  }
+  body.dark & .choose-style {
+    color: var(--secondary-color);
+  }
 
   h2 {
     margin: var(--md-spacing) 0;
