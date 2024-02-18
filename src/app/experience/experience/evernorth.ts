@@ -15,7 +15,7 @@ export const EvernorthExp: IExperience = {
     'Enhances UI and data structures to maximize efficiency and UX',
   ],
   link: 'https://www.evernorth.com/',
-  title: 'Senior Full Stack Engineer',
+  title: 'Software Engineering Senior Advisor',
   technologies: [
     TECHNOLOGIES.ANGULAR,
     TECHNOLOGIES.AWS,

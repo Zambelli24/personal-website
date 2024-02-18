@@ -2,17 +2,17 @@ import { IEducation } from './education.interface';
 
 export const MoravianEdu: IEducation = {
   achievements: [
-    'Graduated with a 4.0 GPA, BS in Computer Science, major in Economics and a minor in Mathematics',
-    'Earned the honor of Valedictorian for the class of 2019',
-    'Charles A. Albrecht Memorial Award - Senior with the best four year record in scholarship and effective participation in student activities.',
-    'Edwin L. Stockton Prize in Economics and Business - The senior with the highest cumulative GPA in the Department of Economics and Business.',
+    '4.0 GPA, BS in Computer Science, major in Economics and a minor in Mathematics',
+    'Valedictorian for the class of 2019',
+    'Charles A. Albrecht Memorial Award',
+    'Edwin L. Stockton Prize in Economics and Business',
     'Dean\'s List (all semesters)',
   ],
   athletics: [
     {
       name: 'Football',
       achievements: [
-        'Team Captain for junior and senior seasons',
+        'Team Captain - junior & senior seasons',
         'Academic All-American 1st team (2017, 2018)',
         'Centennial Conference Scholar-Athlete of the Year (2017)',
         'Male Scholar Athlete of the Year for Moravian College (2018)',
@@ -27,27 +27,26 @@ export const MoravianEdu: IEducation = {
     {
       description: 'Omicron Gamma Omega (OGO)',
       details: [
-        'Served as Vice President for 4 semesters',
+        'Vice President (4 semesters)',
         'Helped organize and run events for the fraternity',
-        'Held the Academic Chair position for 2 semesters',
+        'Academic Chair (2 semesters)',
         'Contributed to 10% increase in fraternity GPA',
-        'Member all 4 years',
+        '4 year member',
       ],
     },
     {
       description: 'CRLA Certified Tutor',
       details: [
-        'Tutored students in Computer Science, Economics, and Mathematics',
-        'Helped students with homework, projects, and test preparation',
+        'Certified in Computer Science, Economics, and Mathematics',
         'Dedicated 4-10 hours per week to tutoring',
-        'Helped teammates and fraternity brothers in addition to general student body',
+        'Assisted general student body in addition to teammates and fraternity brothers',
       ],
     },
     {
       description: 'Senior Class Gift Committee Member',
       details: [
-        'Helped organize and run celebratory events for the senior class',
-        'Helped raise money for the senior class gift',
+        'Organized and run celebratory events for the senior class',
+        'Raised money for the senior class gift',
       ]
     }
   ],

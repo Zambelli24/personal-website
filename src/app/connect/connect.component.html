@@ -1,14 +1,19 @@
 <div>
-  <a aria-label="LinkedIn Profile" target="_blank" rel="noopener" href="https://www.linkedin.com/in/nick-zambelli-0b921a176/" title="LinkedIn">
-      <app-icon [icon]="faLinkedin"></app-icon>
-  </a>
   <a href="mailto: zambeezy008@gmail.com">
       <app-icon [icon]="faGoogle"></app-icon>
   </a>
-  <a href="https://www.instagram.com/zamb33zy/" target="_blank" rel="noopener">
-    <app-icon [icon]="faInstagram"></app-icon>
+  <a aria-label="LinkedIn Profile" target="_blank" rel="noopener" href="https://www.linkedin.com/in/nick-zambelli-0b921a176/" title="LinkedIn">
+      <app-icon [icon]="faLinkedin"></app-icon>
   </a>
-  <a href="https://twitter.com/ZAMB33ZY" target="_blank" rel="noopener">
-      <app-icon [icon]="faXTwitter"></app-icon>
-  </a>
+  <ng-container *ngIf="isWideScreen">
+    <a href="https://www.instagram.com/zamb33zy/" target="_blank" rel="noopener">
+      <app-icon [icon]="faInstagram"></app-icon>
+    </a>
+    <a href="https://twitter.com/ZAMB33ZY" target="_blank" rel="noopener">
+        <app-icon [icon]="faXTwitter"></app-icon>
+    </a>
+    <a href="https://github.com/Zambelli24" target="_blank" rel="noopener">
+        <app-icon [icon]="faGithub"></app-icon>
+    </a>
+  </ng-container>
 </div>

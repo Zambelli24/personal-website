@@ -28,6 +28,7 @@
   div {
     align-items: center;
     display: flex;
+    justify-content: space-around;
     padding: var(--lg-spacing) var(--md-spacing);
 
     &:first-of-type {
@@ -38,7 +39,7 @@
       padding-bottom: 0;
     }
 
-    h3 {
+    .text {
       font-weight: normal;
       margin: 0;
     }
@@ -52,7 +53,7 @@
     &.inverted-background {
       background-color: var(--secondary-color);
 
-      h3 {
+      .text {
         color: var(--secondary-text-color);
       }
     }
@@ -61,7 +62,7 @@
       justify-content: center;
       flex-wrap: wrap;
 
-      h3 {
+      .text {
         order: 1;
         padding-bottom: var(--sm-spacing);
         text-align: center;
